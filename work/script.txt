@@ -1,22 +1,20 @@
---------2023 Day 1 Pt 1---------
-Read puzzle.txt and input.txt to develop a comprehensive plan to solve the puzzle.  Format the plan using Markdown and display it here for review before writing it.
+--------2023 Day 2 Pt 1---------
+As the puzzle solver, read puzzle.txt and input.txt to develop a comprehensive plan to solve the puzzle.  Format the plan using Markdown and display it here for review before writing it.
 
-Write Solution.md and copy it to your output folder.
+That looks good.  Write that as Solution.md to the Solution folder.  Then copy input.txt to the Solution folder.
 
-As the Software Engineer, read Solution.md and the code skeleton in your code_outline folder and come up with a code plan to implement the solution.  Display it here before writing it.
+As the Software Engineer, read Solution.md to understand how to solve the puzzle in Typescript.  
 
-Go ahead and write the solution
+Next read input.base.ts and use that as a model to come up with Typescript code to implement the solution.  Display it here before writing it.
 
-@@@@@@ Correct Answer 56506
---------2023 Day 1 Pt 2---------
-You previously solved the puzzle by reading puzzle.txt and input.txt to produce solution.md -- read over those to refresh your memory and we will attempt to solve puzzle2.txt
+Go ahead and write the solution.
 
-Yes, and copy it to your output folder.
+@@@@@@ Correct Answer 
+--------2023 Day 2 Pt 2---------
+As the puzzle solver, read puzzle2.txt and update Solution.md with the second part.
 
-As the Software Engineer, review Solution1.md and Solution2.md to refresh yourself on the solution approach to our current puzzle
+As the Software Engineer, review Solution.md for the new information about Part 2
 
-Read the solution to part 1 in index.ts and identify where the solution to part 2 should be added
+Implement part 2 in the existing code.
 
-Can you implement part 2?
-
-@@@@@@ Correct Answer 56017
+@@@@@@ Correct Answer

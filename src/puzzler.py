@@ -88,8 +88,9 @@ class UIClient:
 
         # Non-Functional Requirements
         - Industry-standard coding practices should be followed.
-        - Comprehensive documentation should be provided within source code for all requirements
-        - Unless instructed otherwise, all solutions should rely on standard Typescript without external dependencies
+        - Comprehensive documentation should be provided within source code for all requirements.
+        - Unless instructed otherwise, all solutions should rely on standard Typescript without external dependencies.
+        - If there are common libraries which trivialize a solution, indicate so in the response to allow human review.
       
         # Technology Stack
         - Language: TypeScript
@@ -128,8 +129,7 @@ class UIClient:
             filesystem_tool.filesystem_tools_prompt,
             {
                 "ROLE": "Puzzle Reader",
-                "ROLE_INPUT_FOLDER": "./work/01_PUZZLE",
-                "ROLE_OUTPUT_FOLDER": "./work/02_PUZZLE_SOLUTION",
+                "ROLE_INPUT_FOLDER": "./work/01_PUZZLE"
             },
         )
         self.orchestrator.add_agent(puzzle_agent)
@@ -139,7 +139,8 @@ class UIClient:
             BedrockLLMAgentOptions(
                 name="Software Engineer",
                 streaming=False,
-                description=f"Responsible for implementing the Typescript code to calculate the puzzle answer.  Carry out \
+                description=f"Skilled software engineer with experience solving complex coding puzzles.  \
+                    Responsible for implementing the Typescript code to calculate the puzzle answers.  Carry out \
                     puzzle implementation detailed by Puzzle Solver with the following additional details in mind: \
                         \n\n {implementation_notes}",
                 model_id="us.anthropic.claude-3-5-sonnet-20241022-v2:0",
@@ -160,8 +161,7 @@ class UIClient:
             filesystem_tool.filesystem_tools_prompt,
             {
                 "ROLE": "Software Engineer",
-                "ROLE_INPUT_FOLDER": "./work/02_PUZZLE_SOLUTION",
-                "ROLE_OUTPUT_FOLDER": "./work/03_OUTPUT",
+                "ROLE_INPUT_FOLDER": "./work/02_PUZZLE_SOLUTION"
             }
         )
         self.orchestrator.add_agent(software_agent)

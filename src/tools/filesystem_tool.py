@@ -90,7 +90,7 @@ Assume that any file reads originate in the input folder {{ROLE_INPUT_FOLDER}} u
 - File_Writing_Tool, which expects directory_path, file_name, and file_content.  Assume that any working
  file writes should be written back to the intput folder {{ROLE_INPUT_FOLDER}} unless otherwise specified.
 - File_Copy_Tool, which expects source_file and destination_file.  This function is permitted to copy files
- from the input folder {{ROLE_INPUT_FOLDER}} to the the output folder {{ROLE_OUTPUT_FOLDER}} folder.
+ from the input folder {{ROLE_INPUT_FOLDER}} to other locations within the "work" folder.
 
 If the user provides a directory, infer the approximate location relative to the "work" folder in the current
  working directory. You may also be responsible for loading the contents of those files
