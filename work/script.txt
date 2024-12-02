@@ -1,5 +1,5 @@
 --------2023 Day 3 Pt 1---------
-As the puzzle solver, read puzzle.txt and input.txt to develop a comprehensive plan to solve the puzzle.  Be sure to pay close attention to the <bold>emphasized text in bold tags</bold> and to the expected value being requested.  Format the plan using Markdown and display it here for review before writing it.
+As the puzzle solver, for each puzzle file in your input directory create a Solution_n.md file containing a comprehensive plan to solve the puzzle. Be sure to pay close attention to the emphasized text in bold tags and to the expected value being requested. Format the plan using Markdown and write the solution files locally.
 
 That looks good.  Write that as Solution.md to the 02_PUZZLE_SOLUTION folder.  Then copy input.txt to the same place.
 
