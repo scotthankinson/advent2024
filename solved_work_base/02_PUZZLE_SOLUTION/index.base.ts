@@ -2,7 +2,9 @@
 import * as fs from 'fs';
 
 const start = (): void => {
+    console.log("Solution to part 1: ")
     console.log(solve_pt1());
+    console.log("Solution to part 2: ")
     console.log(solve_pt2());
 };
 

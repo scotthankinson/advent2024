@@ -1,95 +1,87 @@
-import { readFileSync } from 'fs';
+"use strict";
+import * as fs from 'fs';
 
-const isValidSequence = (sequence: number[]): boolean => {
-    if (sequence.length <= 1) return true;
-    
-    let increasing: boolean | null = null;
-    
-    for (let i = 1; i < sequence.length; i++) {
-        const diff = sequence[i] - sequence[i-1];
-        
-        // Check if difference is between 1 and 3
-        if (diff === 0 || Math.abs(diff) > 3) return false;
-        
-        // Determine direction on first valid difference
-        if (increasing === null) {
-            increasing = diff > 0;
-        }
-        // Check if direction remains consistent
-        else if ((diff > 0) !== increasing) {
-            return false;
-        }
+const start = (): void => {
+    console.log(solve_pt1());
+    console.log(solve_pt2());
+};
+
+// Helper function to check if numbers are strictly increasing
+const isStrictlyIncreasing = (numbers: number[]): boolean => {
+    for (let i = 1; i < numbers.length; i++) {
+        if (numbers[i] <= numbers[i - 1]) return false;
     }
-    
     return true;
-}
+};
 
-const canBeMadeValidWithOneRemoval = (sequence: number[]): boolean => {
-    // If sequence is already valid, it needs 0 removals
-    if (isValidSequence(sequence)) return false;
-    
-    // Try removing each number once and check if sequence becomes valid
-    let validRemovalCount = 0;
-    
-    for (let i = 0; i < sequence.length; i++) {
-        // Create new sequence without current number
-        const newSequence = [...sequence.slice(0, i), ...sequence.slice(i + 1)];
-        
-        if (isValidSequence(newSequence)) {
-            validRemovalCount++;
-        }
-        
-        // If we found more than one valid removal, return false
-        if (validRemovalCount > 1) return false;
+// Helper function to check if numbers are strictly decreasing
+const isStrictlyDecreasing = (numbers: number[]): boolean => {
+    for (let i = 1; i < numbers.length; i++) {
+        if (numbers[i] >= numbers[i - 1]) return false;
     }
-    
-    // Return true if exactly one removal makes it valid
-    return validRemovalCount === 1;
-}
+    return true;
+};
 
-export const solve_pt1 = (input_file: string): number => {
+// Helper function to check if adjacent differences are valid (1-3)
+const hasValidDifferences = (numbers: number[]): boolean => {
+    for (let i = 1; i < numbers.length; i++) {
+        const diff = Math.abs(numbers[i] - numbers[i - 1]);
+        if (diff < 1 || diff > 3) return false;
+    }
+    return true;
+};
+
+// Check if a report is safe according to Part 1 rules
+const isReportSafe = (numbers: number[]): boolean => {
+    if (numbers.length <= 1) return true; // Single number reports are safe
+    return (isStrictlyIncreasing(numbers) || isStrictlyDecreasing(numbers)) && 
+           hasValidDifferences(numbers);
+};
+
+// Check if a report can be made safe by removing one number (Part 2)
+const canBeMadeSafe = (numbers: number[]): boolean => {
+    if (isReportSafe(numbers)) return true;
+    
+    // Try removing each number once
+    for (let i = 0; i < numbers.length; i++) {
+        const modified = [...numbers.slice(0, i), ...numbers.slice(i + 1)];
+        if (isReportSafe(modified)) return true;
+    }
+    return false;
+};
+
+const solve_pt1 = () => {
     try {
-        const fileContent = readFileSync(input_file, 'utf-8');
-        const lines = fileContent.trim().split('\n');
-        
-        let validCount = 0;
-        
-        for (const line of lines) {
-            const sequence = line.trim().split(' ').map(Number);
-            if (isValidSequence(sequence)) {
-                validCount++;
-            }
-        }
-        
-        return validCount;
-    } catch (error) {
-        console.error('Error reading or processing file:', error);
-        return 0;
-    }
-}
+        let data = fs.readFileSync('src/input.txt', 'utf8');
+        const lines = data.trim().split('\n');
+        const reports = lines.map(line => 
+            line.split(' ').map(num => parseInt(num))
+        );
 
-export const solve_pt2 = (input_file: string): number => {
+        const safeReports = reports.filter(isReportSafe);
+        return safeReports.length;
+    } catch (e) {
+        console.log('Error:', e.stack);
+    }
+    return -1;
+};
+
+const solve_pt2 = () => {
     try {
-        const fileContent = readFileSync(input_file, 'utf-8');
-        const lines = fileContent.trim().split('\n');
-        
-        let validCount = 0;
-        
-        for (const line of lines) {
-            const sequence = line.trim().split(' ').map(Number);
-            if (canBeMadeValidWithOneRemoval(sequence)) {
-                validCount++;
-            }
-        }
-        
-        return validCount;
-    } catch (error) {
-        console.error('Error reading or processing file:', error);
-        return 0;
-    }
-}
+        let data = fs.readFileSync('src/input.txt', 'utf8');
+        const lines = data.trim().split('\n');
+        const reports = lines.map(line => 
+            line.split(' ').map(num => parseInt(num))
+        );
 
-export const start = (): void => {
-    console.log('Part 1 solution:', solve_pt1('input.txt'));
-    console.log('Part 2 solution:', solve_pt2('input.txt'));
-}
+        const safeReports = reports.filter(canBeMadeSafe);
+        return safeReports.length;
+    } catch (e) {
+        console.log('Error:', e.stack);
+    }
+    return -1;
+};
+
+start();
+
+export default start;
