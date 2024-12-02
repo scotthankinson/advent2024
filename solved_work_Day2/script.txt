@@ -7,12 +7,22 @@ As the Software Engineer, read Solution.md to understand how to solve the puzzle
 
 Next read input.base.ts and use that as a pattern to implement the solution in index.ts.  Go ahead and implement the solution using input.txt as the data source.
 
-@@@@@@ Correct Answer 
+@@@@@@ Correct Answer 334
 --------2023 Day 2 Pt 2---------
 As the puzzle solver, read puzzle2.txt and update Solution.md with the second part.
 
 As the Software Engineer, review Solution.md for the new information about Part 2
 
-Go ahead and update index.ts with the part 2 implementation, still using input.txt as the data source.
+Go ahead and update index.ts with the part 2 implementation.
 
-@@@@@@ Correct Answer 
+@@@@@@ Incorrect Answer 65 ---> this was actually correct but off by one
+
+That generated a value of 65 for part 2 but that was not the right answer. Can you review the requirements carefully and then retry the implementation for part 2?
+
+@@@@@@ Incorrect Answer 2
+
+try refactoring countSpecialPositions to check each sequence for the number of levels which must be removed to make it valid, and return back true if that number is 0 or 1
+
+@@@@@@ Incorrect Answer 39
+
+Off to manual implementation review ---> it looks like the code gen was just counting the new safe rows but no longer adding the originals
