@@ -1,4 +1,4 @@
---------2023 Day 1 Pt 1---------
+--------2024 Day 1 Pt 1---------
 As the puzzle solver, read puzzle.txt and input.txt to develop a comprehensive plan to solve the puzzle.  Format the plan using Markdown and display it here for review before writing it.
 
 That looks good.  Write that as Solution.md to the Solution folder.  Then copy input.txt to the Solution folder.
@@ -10,7 +10,7 @@ Next read input.base.ts and use that as a model to come up with Typescript code 
 Go ahead and write the solution
 
 @@@@@@ Correct Answer 3508942
---------2023 Day 1 Pt 2---------
+--------2024 Day 1 Pt 2---------
 You previously solved the puzzle by reading puzzle.txt and input.txt to produce solution.md -- read over those to refresh your memory and we will attempt to solve puzzle2.txt
 
 Yes, and copy it to your output folder.

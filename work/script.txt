@@ -1,16 +1,16 @@
---------2023 Day 3 Pt 1---------
-As the puzzle solver, read puzzle.txt and input.txt to develop a comprehensive plan to solve the puzzle.  Be sure to pay close attention to the <bold>emphasized text in bold tags</bold> and to the expected value being requested.  Format the plan using Markdown and display it here for review before writing it.
+--------2024 Day 6 Pt 1---------
+As the puzzle solver, read puzzle.txt and input.txt to develop a comprehensive plan to solve the puzzle.  Be sure to pay close attention to the <bold>emphasized text</bold> in bold tags and to the expected value being requested.  Format the plan using Markdown and display it here for review before writing it.
 
 That looks good.  Write that as Solution.md to the 02_PUZZLE_SOLUTION folder.  Then copy input.txt to the same place.
 
 As the Software Engineer, read Solution.md to understand how to implement the puzzle solving code in Typescript.  
 
-Next read input.base.ts and use that as a pattern to implement the solution in index.ts.  Use input.txt as the data source.
+Next read input.base.ts and use that as a pattern to implement the solution in index.ts. Make sure to follow the conventions in that file to be compatible with our typescript settings. Use input.txt as the data source.
 
 @@@@@@ Correct Answer 
 
---------2023 Day 3 Pt 2---------
-As the puzzle solver, read puzzle2.txt and update Solution.md with the second part.  Again, pay close attention to the <bold>emphasized text in bold tags</bold> and to the expected value being requested.
+--------2024 Day 6 Pt 2---------
+As the puzzle solver, read puzzle2.txt and update Solution.md with the second part.  Again, pay close attention to the <bold>emphasized text</bold> in bold tags and to the expected value being requested.
 
 As the Software Engineer, review Solution.md for the new information about Part 2
 

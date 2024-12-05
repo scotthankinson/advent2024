@@ -1,4 +1,4 @@
---------2023 Day 2 Pt 1---------
+--------2024 Day 2 Pt 1---------
 As the puzzle solver, read puzzle.txt and input.txt to develop a comprehensive plan to solve the puzzle.  Be sure to pay close attention to the <bold>emphasized text in bold tags</bold> and to the expected value being requested.  Format the plan using Markdown and display it here for review before writing it.
 
 That looks good.  Write that as Solution.md to the 02_PUZZLE_SOLUTION folder.  Then copy input.txt to the same place.
@@ -9,7 +9,7 @@ Next read input.base.ts and use that as a pattern to implement the solution in i
 
 @@@@@@ Correct Answer 334
 
---------2023 Day 2 Pt 2---------
+--------2024 Day 2 Pt 2---------
 As the puzzle solver, read puzzle2.txt and update Solution.md with the second part.  Again, pay close attention to the <bold>emphasized text in bold tags</bold> and to the expected value being requested.
 
 As the Software Engineer, review Solution.md for the new information about Part 2

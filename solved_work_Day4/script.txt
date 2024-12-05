@@ -1,23 +1,23 @@
---------2023 Day 4 Pt 1---------
+--------2024 Day 4 Pt 1---------
 As the puzzle solver, read puzzle.txt and input.txt to develop a comprehensive plan to solve the puzzle.  Be sure to pay close attention to the <bold>emphasized text in bold tags</bold> and to the expected value being requested.  Format the plan using Markdown and display it here for review before writing it.
 
 That looks good.  Write that as Solution.md to the 02_PUZZLE_SOLUTION folder.  Then copy input.txt to the same place.
 
 As the Software Engineer, read Solution.md to understand how to implement the puzzle solving code in Typescript.  
 
-Next read input.base.ts and use that as a basis to implement the solution.  Write the soltion to index.ts and use input.txt as the data source.
+Next read input.base.ts and use that as a basis to implement the solution.  Write the solution to index.ts and use input.txt as the data source.
 
 @@@@@@ Incorrect Answer - 1160 too low
-@@@@@@ Correct Answer - 2642 fixed grid creation / diagonal checks
+@@@@@@ Correct Answer - 2642 fixed grid creation / diagonal checks, had it add in drawing the grid to verify
 
 
---------2023 Day 4 Pt 2---------
+--------2024 Day 4 Pt 2---------
 As the puzzle solver, read puzzle2.txt and update Solution.md with the second part.  Again, pay close attention to the <bold>emphasized text in bold tags</bold> and to the expected value being requested.
 
 As the Software Engineer, review Solution.md for the new information about Part 2
 
 Go ahead and update index.ts with the part 2 implementation, still using input.txt as the data source.
 
-** Heavy coaching to simplify the solution, we settled on simplifying the calculation to check every 'A', get its diagonal strigs, and then increment count when SAM or MAS appeared twice.
+** Heavy coaching to simplify the solution, we settled on simplifying the calculation to check every 'A', get its diagonal strings, and then increment count when SAM or MAS appeared twice.
 @@@@@@ Correct Answer 1974
 
