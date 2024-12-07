@@ -7,7 +7,7 @@ As the Software Engineer, read Solution.md to understand how to implement the pu
 
 Next read index.base.ts and use that as a pattern to implement the solution in index.ts. Make sure to follow the conventions in that file to be compatible with our typescript settings. Use input.txt as the data source.
 
-@@@@@@ Correct Answer 
+@@@@@@ Correct Answer 66343330034722
 
 --------2024 Day 7 Pt 2---------
 As the puzzle solver, read puzzle2.txt and update Solution.md with comprehensive instructions to solve the second part.  Again, pay close attention to the <bold>emphasized text</bold> in bold tags and to the expected value being requested.
