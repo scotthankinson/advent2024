@@ -10,7 +10,7 @@ Next read input.base.ts and use that as a pattern to implement the solution in i
 @@@@@@ Correct Answer 
 
 --------2024 Day 6 Pt 2---------
-As the puzzle solver, read puzzle2.txt and update Solution.md with the second part.  Again, pay close attention to the <bold>emphasized text</bold> in bold tags and to the expected value being requested.
+As the puzzle solver, read puzzle2.txt and update Solution.md with comprehensive instructions to solve the second part.  Again, pay close attention to the <bold>emphasized text</bold> in bold tags and to the expected value being requested.
 
 As the Software Engineer, review Solution.md for the new information about Part 2
 

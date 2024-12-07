@@ -50,7 +50,7 @@ class UIClient:
         See script.txt in the project root for a scenario
         """
         response = await self.orchestrator.route_request(
-            question, "shankinson", "session001"
+            question, "shankinson", "session006"
         )
         print("\n** HISTORY ** \n")
         print(history)
