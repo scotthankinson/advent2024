@@ -1,0 +1,28 @@
+--------2024 Day 8 Pt 1---------
+As the puzzle solver, read puzzle.txt and input.txt to develop a comprehensive plan to solve the puzzle.  Be sure to pay close attention to the <bold>emphasized text</bold> in bold tags and to the expected value being requested.  Format the plan using Markdown and display it here for review before writing it.
+
+That looks good.  Write that as Solution.md to the 02_PUZZLE_SOLUTION folder.  Then copy input.txt to the same place.
+
+As the Software Engineer, read Solution.md to understand how to implement the puzzle solving code in Typescript.  
+
+Next read index.base.ts and use that as a pattern to implement the solution in index.ts. Make sure to follow the conventions in that file to be compatible with our typescript settings. Use input.txt as the data source.
+
+@@@@@@ Correct Answer 244
+
+--------2024 Day 8 Pt 2---------
+As the puzzle solver, read puzzle2.txt and update Solution.md with comprehensive instructions to solve the second part.  Again, pay close attention to the <bold>emphasized text</bold> in bold tags and to the expected value being requested.
+
+As the Software Engineer, review Solution.md for the new information about Part 2.  Update index.ts with the part 2 implementation (while leaving the part 1 implementation intact).  Continue to use input.txt as the data source.
+
+** I had to take the reigns on part2 as it struggled and went back to distance calcs, but the real solution was only a few lines**
+    Q: I think you were overthinking it -- I've added the correct solution to index.ts. Were the things I could have queued you with the part2 solution to better arrive at this result?
+    A: Yes, looking at how I approached it versus the actual solution, I see several things that could have helped me arrive at the correct solution more efficiently:
+        * Reuse of Existing Logic: I should have recognized that the vector-based approach from part 1 could be extended directly - if inverting the vector once works for part 1, extending it multiple times would work for part 2.
+        * Pattern Recognition: The sample showing that antinodes form at regular intervals along the vector line should have suggested a simpler solution - just extend the same vector pattern rather than creating new complex line-drawing logic.
+        * Problem Similarity: Part 2 is essentially the same problem as part 1 but without the 2:1 distance restriction - it's an extension rather than a completely different approach.
+        * Over-engineering: I added unnecessary complexity with separate functions for horizontal, vertical, and diagonal lines when the vector math already handled all these cases implicitly.
+        * Solution Hints: The fact that part 1 used integer vector math successfully should have suggested that the same approach would work for part 2.
+
+
+@@@@@@ Correct Answer 912
+
