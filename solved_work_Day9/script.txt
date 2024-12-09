@@ -1,0 +1,33 @@
+--------2024 Day 9 Pt 1---------
+As the puzzle solver, read puzzle.txt and input.txt to develop a comprehensive plan to solve the puzzle.  Be sure to pay close attention to the <bold>emphasized text</bold> in bold tags and to the expected value being requested.  Format the plan using Markdown and display it here for review before writing it.
+
+That looks good.  Write that as Solution.md to the 02_PUZZLE_SOLUTION folder.  Then copy input.txt to the same place.
+
+As the Software Engineer, read Solution.md to understand how to implement the puzzle solving code in Typescript.  
+
+Next read index.base.ts and use that as a pattern to implement the solution in index.ts. Make sure to follow the conventions in that file to be compatible with our typescript settings. Use input.txt as the data source.
+
+@@@@@@ Correct Answer 6471961544878
+
+--------2024 Day 9 Pt 2---------
+
+@@@@@@ Incorrect Answer 6568088051689 too high 
+@@@@@@ Incorrect Answer 87872683111 too low
+
+(Regenerated Pt1 and threw away Solution.md part 2 as it was misleading the bot)
+Excellent! That worked for the sample input and the full puzzle input. We need to modify the code now to implement part 2 -- let's makes sure that Part1 stays functional the whole time. Instead of moving single pieces of files one digit at a time, we should move entire blocks. For example:
+
+00...111...2...333.44.5555.6666.777.888899
+0099.111...2...333.44.5555.6666.777.8888..
+0099.1117772...333.44.5555.6666.....8888..
+0099.111777244.333....5555.6666.....8888..
+00992111777.44.333....5555.6666.....8888..
+
+On the first line we have our expanded initial state
+On the second line, 99 has moved form the end to the open position just after 00
+On the third line, 777 moves to the open 3-length spot after 111
+etc
+
+One important obsevation: 8888, 6666, and 5555 did not have valid moves at the time they were evaluated and stayed in place. That is to say, we evaluate blocks right to left but blocks are not reevaluated even if a new opening would allow for it to have moved. Do you think you can implement this part2 functionality?
+
+@@@@@@ Correct Answer 6511178035564
