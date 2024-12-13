@@ -1,0 +1,8 @@
+
+> advent-2024@0.0.0 start
+> npm run build && node build/index.js --max-old-space-size=8092
+
+
+> advent-2024@0.0.0 build
+> npm run clean && tsc
+
