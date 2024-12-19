@@ -1,0 +1,4371 @@
+
+> advent-2024@0.0.0 start
+> npm run build && node build/index.js --max-old-space-size=8092
+
+
+> advent-2024@0.0.0 build
+> npm run clean && tsc
+
+
+> advent-2024@0.0.0 clean
+> rm -rf build
+
+Starting...
+Reading input from src/input.txt
+
+=== Solving Part 1 ===
+Parsed Input:
+Registers: A=48744869, B=0, C=0
+Program: 2,4,1,2,7,5,1,3,4,4,5,5,0,3,3,0
+Part 1 Solution: 7,1,5,2,4,0,7,6,1
+
+=== Solving Part 2 ===
+Parsed Input:
+Registers: A=48744869, B=0, C=0
+Program: 2,4,1,2,7,5,1,3,4,4,5,5,0,3,3,0
+Searching for lowest valid Register A value...
+
+Analyzing initial patterns...
+Expected output: 2,4,1,2,7,5,1,3,4,4,5,5,0,3,3,0
+
+Found repeat cycle from 9 to 10 (length: 2)
+Output pattern: 1,0
+Values that can be skipped: 10 to 10
+
+Regular interval found for output: 7,0
+Interval size: 3
+First few values: 11, 14
+
+Regular interval found for output: 5,1
+Interval size: 4
+First few values: 16, 20
+
+Found repeat cycle from 22 to 23 (length: 2)
+Output pattern: 6,1
+Values that can be skipped: 23 to 23
+
+Regular interval found for output: 7,3
+Interval size: 3
+First few values: 24, 27
+
+Found repeat cycle from 30 to 31 (length: 2)
+Output pattern: 6,3
+Values that can be skipped: 31 to 31
+
+Regular interval found for output: 1,5
+Interval size: 2
+First few values: 32, 34
+
+Regular interval found for output: 4,5
+Interval size: 4
+First few values: 33, 37
+
+Regular interval found for output: 5,5
+Interval size: 2
+First few values: 36, 38
+
+Regular interval found for output: 5,4
+Interval size: 3
+First few values: 41, 44
+
+Regular interval found for output: 7,4
+Interval size: 4
+First few values: 43, 47
+
+Regular interval found for output: 5,7
+Interval size: 4
+First few values: 48, 52
+
+Found repeat cycle from 53 to 54 (length: 2)
+Output pattern: 4,7
+Values that can be skipped: 54 to 54
+
+Found repeat cycle from 56 to 57 (length: 2)
+Output pattern: 7,6
+Values that can be skipped: 57 to 57
+
+Found repeat cycle from 61 to 62 (length: 2)
+Output pattern: 4,6
+Values that can be skipped: 62 to 62
+
+Regular interval found for output: 1,3,0
+Interval size: 2
+First few values: 64, 66
+
+Found repeat cycle from 68 to 69 (length: 2)
+Output pattern: 4,3,0
+Values that can be skipped: 69 to 69
+
+Regular interval found for output: 3,3,0
+Interval size: 3
+First few values: 67, 70
+
+Found repeat cycle from 73 to 74 (length: 2)
+Output pattern: 1,1,0
+Values that can be skipped: 74 to 74
+
+Found repeat cycle from 76 to 77 (length: 2)
+Output pattern: 4,1,0
+Values that can be skipped: 77 to 77
+
+Regular interval found for output: 3,1,0
+Interval size: 6
+First few values: 72, 78
+
+Found repeat cycle from 84 to 85 (length: 2)
+Output pattern: 4,1,0
+Values that can be skipped: 85 to 85
+
+Regular interval found for output: 2,1,0
+Interval size: 5
+First few values: 81, 86
+
+Regular interval found for output: 7,7,0
+Interval size: 3
+First few values: 88, 91
+
+Found repeat cycle from 92 to 93 (length: 2)
+Output pattern: 4,7,0
+Values that can be skipped: 93 to 93
+
+Regular interval found for output: 1,5,0
+Interval size: 2
+First few values: 96, 98
+
+Regular interval found for output: 4,5,0
+Interval size: 3
+First few values: 97, 100
+
+Found repeat cycle from 100 to 101 (length: 2)
+Output pattern: 4,5,0
+Values that can be skipped: 101 to 101
+
+Found repeat cycle from 108 to 109 (length: 2)
+Output pattern: 4,4,0
+Values that can be skipped: 109 to 109
+
+Regular interval found for output: 1,4,0
+Interval size: 4
+First few values: 106, 110
+
+Regular interval found for output: 5,4,0
+Interval size: 6
+First few values: 105, 111
+
+Regular interval found for output: 1,7,0
+Interval size: 24
+First few values: 90, 114
+
+Regular interval found for output: 3,7,0
+Interval size: 26
+First few values: 89, 115
+
+Found repeat cycle from 116 to 117 (length: 2)
+Output pattern: 4,7,0
+Values that can be skipped: 117 to 117
+
+Regular interval found for output: 5,7,0
+Interval size: 7
+First few values: 112, 119
+
+Found repeat cycle from 120 to 121 (length: 2)
+Output pattern: 7,6,0
+Values that can be skipped: 121 to 121
+
+Found repeat cycle from 124 to 125 (length: 2)
+Output pattern: 4,6,0
+Values that can be skipped: 125 to 125
+
+Regular interval found for output: 1,5,1
+Interval size: 2
+First few values: 128, 130
+
+Regular interval found for output: 7,5,1
+Interval size: 2
+First few values: 132, 134
+
+Found repeat cycle from 137 to 138 (length: 2)
+Output pattern: 1,2,1
+Values that can be skipped: 138 to 138
+
+Found repeat cycle from 139 to 140 (length: 2)
+Output pattern: 7,2,1
+Values that can be skipped: 140 to 140
+
+Regular interval found for output: 5,1,1
+Interval size: 5
+First few values: 144, 149
+
+Regular interval found for output: 2,1,1
+Interval size: 6
+First few values: 145, 151
+
+Regular interval found for output: 7,3,1
+Interval size: 3
+First few values: 152, 155
+
+Found repeat cycle from 155 to 156 (length: 2)
+Output pattern: 7,3,1
+Values that can be skipped: 156 to 156
+
+Regular interval found for output: 3,5,1
+Interval size: 32
+First few values: 131, 163
+
+Regular interval found for output: 5,5,1
+Interval size: 32
+First few values: 133, 165
+
+Found repeat cycle from 165 to 166 (length: 2)
+Output pattern: 5,5,1
+Values that can be skipped: 166 to 166
+
+Found repeat cycle from 171 to 172 (length: 2)
+Output pattern: 7,4,1
+Values that can be skipped: 172 to 172
+
+Regular interval found for output: 5,4,1
+Interval size: 4
+First few values: 169, 173
+
+Found repeat cycle from 173 to 174 (length: 2)
+Output pattern: 5,4,1
+Values that can be skipped: 174 to 174
+
+Regular interval found for output: 3,4,1
+Interval size: 7
+First few values: 168, 175
+
+Regular interval found for output: 5,6,1
+Interval size: 5
+First few values: 176, 181
+
+Regular interval found for output: 3,6,1
+Interval size: 4
+First few values: 179, 183
+
+Regular interval found for output: 7,6,1
+Interval size: 4
+First few values: 180, 184
+
+Found repeat cycle from 184 to 185 (length: 2)
+Output pattern: 7,6,1
+Values that can be skipped: 185 to 185
+
+Regular interval found for output: 1,6,1
+Interval size: 8
+First few values: 178, 186
+
+Found repeat cycle from 187 to 188 (length: 2)
+Output pattern: 7,6,1
+Values that can be skipped: 188 to 188
+
+Regular interval found for output: 4,6,1
+Interval size: 8
+First few values: 182, 190
+
+Regular interval found for output: 1,7,3
+Interval size: 2
+First few values: 192, 194
+
+Regular interval found for output: 3,7,3
+Interval size: 3
+First few values: 195, 198
+
+Regular interval found for output: 0,7,3
+Interval size: 6
+First few values: 193, 199
+
+Found repeat cycle from 201 to 202 (length: 2)
+Output pattern: 1,3,3
+Values that can be skipped: 202 to 202
+
+Regular interval found for output: 3,3,3
+Interval size: 6
+First few values: 200, 206
+
+Regular interval found for output: 5,1,3
+Interval size: 5
+First few values: 208, 213
+
+Regular interval found for output: 2,1,3
+Interval size: 5
+First few values: 209, 214
+
+Regular interval found for output: 7,7,3
+Interval size: 3
+First few values: 216, 219
+
+Regular interval found for output: 6,7,3
+Interval size: 24
+First few values: 196, 220
+
+Regular interval found for output: 5,7,3
+Interval size: 24
+First few values: 197, 221
+
+Regular interval found for output: 1,5,3
+Interval size: 2
+First few values: 224, 226
+
+Found repeat cycle from 230 to 231 (length: 2)
+Output pattern: 1,5,3
+Values that can be skipped: 231 to 231
+
+Regular interval found for output: 5,4,3
+Interval size: 4
+First few values: 233, 237
+
+Regular interval found for output: 1,4,3
+Interval size: 4
+First few values: 234, 238
+
+Found repeat cycle from 238 to 239 (length: 2)
+Output pattern: 1,4,3
+Values that can be skipped: 239 to 239
+
+Regular interval found for output: 6,6,3
+Interval size: 3
+First few values: 241, 244
+
+Regular interval found for output: 5,6,3
+Interval size: 5
+First few values: 240, 245
+
+Regular interval found for output: 1,6,3
+Interval size: 5
+First few values: 242, 247
+
+Found repeat cycle from 248 to 249 (length: 2)
+Output pattern: 7,6,3
+Values that can be skipped: 249 to 249
+
+Regular interval found for output: 0,6,3
+Interval size: 8
+First few values: 246, 254
+
+Regular interval found for output: 1,1,5
+Interval size: 2
+First few values: 256, 258
+
+Regular interval found for output: 1,1,5
+Interval size: 2
+First few values: 256, 258, 260
+
+Regular interval found for output: 6,1,5
+Interval size: 2
+First few values: 261, 263
+
+Found repeat cycle from 265 to 266 (length: 2)
+Output pattern: 1,4,5
+Values that can be skipped: 266 to 266
+
+Regular interval found for output: 7,4,5
+Interval size: 3
+First few values: 267, 270
+
+Regular interval found for output: 6,4,5
+Interval size: 2
+First few values: 269, 271
+
+Regular interval found for output: 3,1,5
+Interval size: 16
+First few values: 259, 275
+
+Found repeat cycle from 277 to 279 (length: 3)
+Output pattern: 6,1,5
+Values that can be skipped: 278 to 279
+
+Regular interval found for output: 7,3,5
+Interval size: 3
+First few values: 280, 283
+
+Regular interval found for output: 1,3,5
+Interval size: 2
+First few values: 282, 284
+
+Found repeat cycle from 285 to 287 (length: 3)
+Output pattern: 6,3,5
+Values that can be skipped: 286 to 287
+
+Regular interval found for output: 1,5,5
+Interval size: 2
+First few values: 288, 290
+
+Regular interval found for output: 1,5,5
+Interval size: 2
+First few values: 288, 290, 292
+
+Regular interval found for output: 3,4,5
+Interval size: 32
+First few values: 264, 296
+
+Regular interval found for output: 5,4,5
+Interval size: 5
+First few values: 297, 302
+
+Regular interval found for output: 5,5,5
+Interval size: 10
+First few values: 294, 304
+
+Regular interval found for output: 6,5,5
+Interval size: 12
+First few values: 293, 305
+
+Regular interval found for output: 3,5,5
+Interval size: 16
+First few values: 291, 307
+
+Regular interval found for output: 4,5,5
+Interval size: 21
+First few values: 289, 310
+
+Regular interval found for output: 7,5,5
+Interval size: 16
+First few values: 295, 311
+
+Found repeat cycle from 312 to 313 (length: 2)
+Output pattern: 7,7,5
+Values that can be skipped: 313 to 313
+
+Regular interval found for output: 1,7,5
+Interval size: 2
+First few values: 314, 316
+
+Regular interval found for output: 1,3,4
+Interval size: 2
+First few values: 320, 322
+
+Regular interval found for output: 0,3,4
+Interval size: 3
+First few values: 321, 324
+
+Regular interval found for output: 3,3,4
+Interval size: 3
+First few values: 323, 326
+
+Found repeat cycle from 329 to 330 (length: 2)
+Output pattern: 1,5,4
+Values that can be skipped: 330 to 330
+
+Regular interval found for output: 3,5,4
+Interval size: 6
+First few values: 328, 334
+
+Regular interval found for output: 2,1,4
+Interval size: 5
+First few values: 337, 342
+
+Regular interval found for output: 7,7,4
+Interval size: 3
+First few values: 344, 347
+
+Regular interval found for output: 4,5,4
+Interval size: 18
+First few values: 335, 353
+
+Regular interval found for output: 0,5,4
+Interval size: 24
+First few values: 332, 356
+
+Regular interval found for output: 6,5,4
+Interval size: 24
+First few values: 333, 357
+
+Regular interval found for output: 1,4,4
+Interval size: 4
+First few values: 362, 366
+
+Regular interval found for output: 5,4,4
+Interval size: 6
+First few values: 361, 367
+
+Regular interval found for output: 5,5,4
+Interval size: 9
+First few values: 359, 368
+
+Found repeat cycle from 376 to 377 (length: 2)
+Output pattern: 7,7,4
+Values that can be skipped: 377 to 377
+
+Regular interval found for output: 1,7,4
+Interval size: 32
+First few values: 346, 378
+
+Regular interval found for output: 0,7,4
+Interval size: 32
+First few values: 348, 380
+
+Regular interval found for output: 6,7,4
+Interval size: 32
+First few values: 349, 381
+
+Regular interval found for output: 1,5,7
+Interval size: 2
+First few values: 384, 386
+
+Found repeat cycle from 387 to 388 (length: 2)
+Output pattern: 3,5,7
+Values that can be skipped: 388 to 388
+
+Found repeat cycle from 389 to 390 (length: 2)
+Output pattern: 7,5,7
+Values that can be skipped: 390 to 390
+
+Found repeat cycle from 393 to 394 (length: 2)
+Output pattern: 1,6,7
+Values that can be skipped: 394 to 394
+
+Regular interval found for output: 3,6,7
+Interval size: 4
+First few values: 392, 396
+
+Regular interval found for output: 7,6,7
+Interval size: 2
+First few values: 395, 397
+
+Found repeat cycle from 397 to 398 (length: 2)
+Output pattern: 7,6,7
+Values that can be skipped: 398 to 398
+
+Found repeat cycle from 403 to 404 (length: 2)
+Output pattern: 3,1,7
+Values that can be skipped: 404 to 404
+
+Regular interval found for output: 2,1,7
+Interval size: 6
+First few values: 401, 407
+
+Regular interval found for output: 7,3,7
+Interval size: 3
+First few values: 408, 411
+
+Regular interval found for output: 3,3,7
+Interval size: 3
+First few values: 409, 412
+
+Found repeat cycle from 419 to 420 (length: 2)
+Output pattern: 3,5,7
+Values that can be skipped: 420 to 420
+
+Regular interval found for output: 3,4,7
+Interval size: 4
+First few values: 424, 428
+
+Regular interval found for output: 7,4,7
+Interval size: 2
+First few values: 427, 429
+
+Regular interval found for output: 5,4,7
+Interval size: 5
+First few values: 425, 430
+
+Regular interval found for output: 1,4,7
+Interval size: 8
+First few values: 426, 434
+
+Found repeat cycle from 435 to 436 (length: 2)
+Output pattern: 3,4,7
+Values that can be skipped: 436 to 436
+
+Found repeat cycle from 440 to 441 (length: 2)
+Output pattern: 7,7,7
+Values that can be skipped: 441 to 441
+
+Regular interval found for output: 3,7,7
+Interval size: 3
+First few values: 444, 447
+
+Regular interval found for output: 1,7,6
+Interval size: 2
+First few values: 448, 450
+
+Regular interval found for output: 3,7,6
+Interval size: 3
+First few values: 451, 454
+
+Regular interval found for output: 0,7,6
+Interval size: 6
+First few values: 449, 455
+
+Found repeat cycle from 457 to 458 (length: 2)
+Output pattern: 1,7,6
+Values that can be skipped: 458 to 458
+
+Regular interval found for output: 7,7,6
+Interval size: 6
+First few values: 453, 459
+
+Regular interval found for output: 2,7,6
+Interval size: 8
+First few values: 452, 460
+
+Regular interval found for output: 2,1,6
+Interval size: 3
+First few values: 465, 468
+
+Regular interval found for output: 1,5,6
+Interval size: 2
+First few values: 480, 482
+
+Found repeat cycle from 486 to 487 (length: 2)
+Output pattern: 1,5,6
+Values that can be skipped: 487 to 487
+
+Regular interval found for output: 7,4,6
+Interval size: 2
+First few values: 491, 493
+
+Regular interval found for output: 1,4,6
+Interval size: 4
+First few values: 490, 494
+
+Found repeat cycle from 494 to 495 (length: 2)
+Output pattern: 1,4,6
+Values that can be skipped: 495 to 495
+
+Regular interval found for output: 5,4,6
+Interval size: 7
+First few values: 489, 496
+
+Regular interval found for output: 3,4,6
+Interval size: 11
+First few values: 488, 499
+
+Regular interval found for output: 2,4,6
+Interval size: 8
+First few values: 492, 500
+
+Found repeat cycle from 504 to 505 (length: 2)
+Output pattern: 7,7,6
+Values that can be skipped: 505 to 505
+
+Regular interval found for output: 1,1,3,0
+Interval size: 2
+First few values: 512, 514
+
+Regular interval found for output: 0,1,3,0
+Interval size: 4
+First few values: 513, 517
+
+Found repeat cycle from 521 to 522 (length: 2)
+Output pattern: 1,0,3,0
+Values that can be skipped: 522 to 522
+
+Regular interval found for output: 7,0,3,0
+Interval size: 3
+First few values: 523, 526
+
+Regular interval found for output: 5,1,3,0
+Interval size: 12
+First few values: 516, 528
+
+Regular interval found for output: 3,1,3,0
+Interval size: 16
+First few values: 515, 531
+
+Regular interval found for output: 6,1,3,0
+Interval size: 15
+First few values: 519, 534
+
+Found repeat cycle from 534 to 535 (length: 2)
+Output pattern: 6,1,3,0
+Values that can be skipped: 535 to 535
+
+Regular interval found for output: 7,3,3,0
+Interval size: 3
+First few values: 536, 539
+
+Found repeat cycle from 542 to 543 (length: 2)
+Output pattern: 6,3,3,0
+Values that can be skipped: 543 to 543
+
+Regular interval found for output: 1,4,3,0
+Interval size: 2
+First few values: 544, 546
+
+Regular interval found for output: 5,4,3,0
+Interval size: 2
+First few values: 548, 550
+
+Regular interval found for output: 3,4,3,0
+Interval size: 5
+First few values: 547, 552
+
+Regular interval found for output: 7,4,3,0
+Interval size: 4
+First few values: 551, 555
+
+Regular interval found for output: 0,4,3,0
+Interval size: 8
+First few values: 549, 557
+
+Regular interval found for output: 7,4,3,0
+Interval size: 4
+First few values: 551, 555, 559
+
+Regular interval found for output: 5,3,3,0
+Interval size: 20
+First few values: 540, 560
+
+Regular interval found for output: 1,3,3,0
+Interval size: 24
+First few values: 538, 562
+
+Regular interval found for output: 3,3,3,0
+Interval size: 26
+First few values: 537, 563
+
+Regular interval found for output: 0,3,3,0
+Interval size: 24
+First few values: 541, 565
+
+Found repeat cycle from 568 to 569 (length: 2)
+Output pattern: 7,4,3,0
+Values that can be skipped: 569 to 569
+
+Regular interval found for output: 4,4,3,0
+Interval size: 29
+First few values: 545, 574
+
+Regular interval found for output: 1,3,1,0
+Interval size: 2
+First few values: 576, 578
+
+Regular interval found for output: 0,3,1,0
+Interval size: 4
+First few values: 577, 581
+
+Regular interval found for output: 3,3,1,0
+Interval size: 3
+First few values: 579, 582
+
+Regular interval found for output: 4,3,1,0
+Interval size: 3
+First few values: 580, 583
+
+Found repeat cycle from 585 to 586 (length: 2)
+Output pattern: 1,1,1,0
+Values that can be skipped: 586 to 586
+
+Regular interval found for output: 3,1,1,0
+Interval size: 6
+First few values: 584, 590
+
+Regular interval found for output: 4,1,1,0
+Interval size: 3
+First few values: 588, 591
+
+Regular interval found for output: 0,1,1,0
+Interval size: 8
+First few values: 589, 597
+
+Regular interval found for output: 2,1,1,0
+Interval size: 5
+First few values: 593, 598
+
+Regular interval found for output: 7,7,1,0
+Interval size: 3
+First few values: 600, 603
+
+Regular interval found for output: 4,7,1,0
+Interval size: 3
+First few values: 604, 607
+
+Regular interval found for output: 1,4,1,0
+Interval size: 2
+First few values: 608, 610
+
+Regular interval found for output: 4,4,1,0
+Interval size: 3
+First few values: 609, 612
+
+Regular interval found for output: 3,4,1,0
+Interval size: 5
+First few values: 611, 616
+
+Regular interval found for output: 5,4,1,0
+Interval size: 2
+First few values: 615, 617
+
+Regular interval found for output: 0,4,1,0
+Interval size: 8
+First few values: 613, 621
+
+Found repeat cycle from 629 to 630 (length: 2)
+Output pattern: 0,3,1,0
+Values that can be skipped: 630 to 630
+
+Regular interval found for output: 5,3,1,0
+Interval size: 7
+First few values: 624, 631
+
+Regular interval found for output: 7,4,1,0
+Interval size: 13
+First few values: 619, 632
+
+Found repeat cycle from 632 to 633 (length: 2)
+Output pattern: 7,4,1,0
+Values that can be skipped: 633 to 633
+
+Found repeat cycle from 637 to 638 (length: 2)
+Output pattern: 0,4,1,0
+Values that can be skipped: 638 to 638
+
+Regular interval found for output: 1,5,1,0
+Interval size: 2
+First few values: 640, 642
+
+Regular interval found for output: 7,5,1,0
+Interval size: 2
+First few values: 644, 646
+
+Found repeat cycle from 649 to 650 (length: 2)
+Output pattern: 1,2,1,0
+Values that can be skipped: 650 to 650
+
+Found repeat cycle from 651 to 652 (length: 2)
+Output pattern: 7,2,1,0
+Values that can be skipped: 652 to 652
+
+Regular interval found for output: 5,1,1,0
+Interval size: 64
+First few values: 592, 656
+
+Regular interval found for output: 7,1,1,0
+Interval size: 73
+First few values: 587, 660
+
+Regular interval found for output: 7,3,1,0
+Interval size: 3
+First few values: 664, 667
+
+Found repeat cycle from 667 to 668 (length: 2)
+Output pattern: 7,3,1,0
+Values that can be skipped: 668 to 668
+
+Regular interval found for output: 6,3,1,0
+Interval size: 45
+First few values: 625, 670
+
+Found repeat cycle from 679 to 680 (length: 2)
+Output pattern: 3,4,1,0
+Values that can be skipped: 680 to 680
+
+Found repeat cycle from 683 to 684 (length: 2)
+Output pattern: 7,4,1,0
+Values that can be skipped: 684 to 684
+
+Regular interval found for output: 3,2,1,0
+Interval size: 43
+First few values: 648, 691
+
+Found repeat cycle from 696 to 697 (length: 2)
+Output pattern: 7,4,1,0
+Values that can be skipped: 697 to 697
+
+Found repeat cycle from 699 to 700 (length: 2)
+Output pattern: 7,4,1,0
+Values that can be skipped: 700 to 700
+
+Regular interval found for output: 1,7,7,0
+Interval size: 2
+First few values: 704, 706
+
+Regular interval found for output: 3,7,7,0
+Interval size: 3
+First few values: 707, 710
+
+Regular interval found for output: 0,7,7,0
+Interval size: 6
+First few values: 705, 711
+
+Found repeat cycle from 713 to 714 (length: 2)
+Output pattern: 1,3,7,0
+Values that can be skipped: 714 to 714
+
+Regular interval found for output: 3,3,7,0
+Interval size: 6
+First few values: 712, 718
+
+Regular interval found for output: 1,1,7,0
+Interval size: 3
+First few values: 722, 725
+
+Regular interval found for output: 2,1,7,0
+Interval size: 5
+First few values: 721, 726
+
+Regular interval found for output: 7,7,7,0
+Interval size: 3
+First few values: 728, 731
+
+Regular interval found for output: 6,7,7,0
+Interval size: 24
+First few values: 708, 732
+
+Regular interval found for output: 1,4,7,0
+Interval size: 2
+First few values: 736, 738
+
+Found repeat cycle from 741 to 743 (length: 3)
+Output pattern: 1,4,7,0
+Values that can be skipped: 742 to 743
+
+Regular interval found for output: 3,4,7,0
+Interval size: 5
+First few values: 739, 744
+
+Regular interval found for output: 6,4,7,0
+Interval size: 8
+First few values: 740, 748
+
+Found repeat cycle from 749 to 751 (length: 3)
+Output pattern: 1,4,7,0
+Values that can be skipped: 750 to 751
+
+Regular interval found for output: 6,2,7,0
+Interval size: 3
+First few values: 753, 756
+
+Regular interval found for output: 1,2,7,0
+Interval size: 3
+First few values: 754, 757
+
+Regular interval found for output: 7,4,7,0
+Interval size: 13
+First few values: 747, 760
+
+Found repeat cycle from 760 to 761 (length: 2)
+Output pattern: 7,4,7,0
+Values that can be skipped: 761 to 761
+
+Regular interval found for output: 1,1,5,0
+Interval size: 2
+First few values: 768, 770
+
+Regular interval found for output: 1,1,5,0
+Interval size: 2
+First few values: 768, 770, 772
+
+Found repeat cycle from 777 to 778 (length: 2)
+Output pattern: 1,4,5,0
+Values that can be skipped: 778 to 778
+
+Regular interval found for output: 7,4,5,0
+Interval size: 3
+First few values: 779, 782
+
+Regular interval found for output: 2,1,5,0
+Interval size: 12
+First few values: 773, 785
+
+Regular interval found for output: 3,1,5,0
+Interval size: 16
+First few values: 771, 787
+
+Regular interval found for output: 6,1,5,0
+Interval size: 15
+First few values: 775, 790
+
+Found repeat cycle from 790 to 791 (length: 2)
+Output pattern: 6,1,5,0
+Values that can be skipped: 791 to 791
+
+Regular interval found for output: 7,3,5,0
+Interval size: 3
+First few values: 792, 795
+
+Regular interval found for output: 1,3,5,0
+Interval size: 2
+First few values: 794, 796
+
+Found repeat cycle from 798 to 799 (length: 2)
+Output pattern: 6,3,5,0
+Values that can be skipped: 799 to 799
+
+Regular interval found for output: 3,4,5,0
+Interval size: 27
+First few values: 776, 803
+
+Regular interval found for output: 2,4,5,0
+Interval size: 24
+First few values: 781, 805
+
+Regular interval found for output: 5,4,5,0
+Interval size: 3
+First few values: 806, 809
+
+Regular interval found for output: 5,1,5,0
+Interval size: 32
+First few values: 784, 816
+
+Regular interval found for output: 7,1,5,0
+Interval size: 49
+First few values: 774, 823
+
+Found repeat cycle from 824 to 825 (length: 2)
+Output pattern: 7,5,5,0
+Values that can be skipped: 825 to 825
+
+Regular interval found for output: 1,5,5,0
+Interval size: 2
+First few values: 826, 828
+
+Regular interval found for output: 1,3,4,0
+Interval size: 2
+First few values: 832, 834
+
+Regular interval found for output: 0,3,4,0
+Interval size: 3
+First few values: 833, 836
+
+Regular interval found for output: 3,3,4,0
+Interval size: 3
+First few values: 835, 838
+
+Found repeat cycle from 841 to 842 (length: 2)
+Output pattern: 1,5,4,0
+Values that can be skipped: 842 to 842
+
+Regular interval found for output: 3,5,4,0
+Interval size: 6
+First few values: 840, 846
+
+Regular interval found for output: 2,1,4,0
+Interval size: 4
+First few values: 849, 853
+
+Found repeat cycle from 853 to 854 (length: 2)
+Output pattern: 2,1,4,0
+Values that can be skipped: 854 to 854
+
+Regular interval found for output: 7,7,4,0
+Interval size: 3
+First few values: 856, 859
+
+Found repeat cycle from 861 to 862 (length: 2)
+Output pattern: 2,7,4,0
+Values that can be skipped: 862 to 862
+
+Regular interval found for output: 1,4,4,0
+Interval size: 2
+First few values: 864, 866
+
+Regular interval found for output: 3,4,4,0
+Interval size: 5
+First few values: 867, 872
+
+Regular interval found for output: 5,4,4,0
+Interval size: 2
+First few values: 871, 873
+
+Regular interval found for output: 0,4,4,0
+Interval size: 8
+First few values: 868, 876
+
+Regular interval found for output: 2,4,4,0
+Interval size: 8
+First few values: 869, 877
+
+Regular interval found for output: 5,1,4,0
+Interval size: 32
+First few values: 848, 880
+
+Regular interval found for output: 1,1,4,0
+Interval size: 32
+First few values: 850, 882
+
+Regular interval found for output: 3,1,4,0
+Interval size: 32
+First few values: 851, 883
+
+Regular interval found for output: 0,1,4,0
+Interval size: 32
+First few values: 852, 884
+
+Regular interval found for output: 7,5,4,0
+Interval size: 45
+First few values: 843, 888
+
+Found repeat cycle from 888 to 889 (length: 2)
+Output pattern: 7,5,4,0
+Values that can be skipped: 889 to 889
+
+Regular interval found for output: 0,5,4,0
+Interval size: 48
+First few values: 844, 892
+
+Regular interval found for output: 2,5,4,0
+Interval size: 48
+First few values: 845, 893
+
+Regular interval found for output: 1,5,7,0
+Interval size: 2
+First few values: 896, 898
+
+Found repeat cycle from 899 to 901 (length: 3)
+Output pattern: 3,5,7,0
+Values that can be skipped: 900 to 901
+
+Found repeat cycle from 905 to 906 (length: 2)
+Output pattern: 1,6,7,0
+Values that can be skipped: 906 to 906
+
+Regular interval found for output: 3,6,7,0
+Interval size: 4
+First few values: 904, 908
+
+Found repeat cycle from 908 to 909 (length: 2)
+Output pattern: 3,6,7,0
+Values that can be skipped: 909 to 909
+
+Regular interval found for output: 7,6,7,0
+Interval size: 3
+First few values: 907, 910
+
+Regular interval found for output: 5,1,7,0
+Interval size: 192
+First few values: 720, 912
+
+Regular interval found for output: 3,1,7,0
+Interval size: 192
+First few values: 723, 915
+
+Found repeat cycle from 915 to 917 (length: 3)
+Output pattern: 3,1,7,0
+Values that can be skipped: 916 to 917
+
+Regular interval found for output: 6,1,7,0
+Interval size: 194
+First few values: 724, 918
+
+Regular interval found for output: 7,3,7,0
+Interval size: 205
+First few values: 715, 920
+
+Found repeat cycle from 924 to 925 (length: 2)
+Output pattern: 3,3,7,0
+Values that can be skipped: 925 to 925
+
+Regular interval found for output: 6,3,7,0
+Interval size: 210
+First few values: 716, 926
+
+Regular interval found for output: 4,4,7,0
+Interval size: 192
+First few values: 737, 929
+
+Found repeat cycle from 931 to 933 (length: 3)
+Output pattern: 3,4,7,0
+Values that can be skipped: 932 to 933
+
+Regular interval found for output: 5,4,7,0
+Interval size: 189
+First few values: 745, 934
+
+Found repeat cycle from 935 to 936 (length: 2)
+Output pattern: 3,4,7,0
+Values that can be skipped: 936 to 936
+
+Found repeat cycle from 940 to 941 (length: 2)
+Output pattern: 3,4,7,0
+Values that can be skipped: 941 to 941
+
+Found repeat cycle from 947 to 949 (length: 3)
+Output pattern: 3,0,7,0
+Values that can be skipped: 948 to 949
+
+Regular interval found for output: 7,5,7,0
+Interval size: 50
+First few values: 902, 952
+
+Found repeat cycle from 952 to 953 (length: 2)
+Output pattern: 7,5,7,0
+Values that can be skipped: 953 to 953
+
+Found repeat cycle from 956 to 957 (length: 2)
+Output pattern: 3,5,7,0
+Values that can be skipped: 957 to 957
+
+Regular interval found for output: 1,7,6,0
+Interval size: 2
+First few values: 960, 962
+
+Regular interval found for output: 3,7,6,0
+Interval size: 2
+First few values: 963, 965
+
+Found repeat cycle from 965 to 966 (length: 2)
+Output pattern: 3,7,6,0
+Values that can be skipped: 966 to 966
+
+Regular interval found for output: 0,7,6,0
+Interval size: 6
+First few values: 961, 967
+
+Found repeat cycle from 969 to 970 (length: 2)
+Output pattern: 1,7,6,0
+Values that can be skipped: 970 to 970
+
+Regular interval found for output: 2,7,6,0
+Interval size: 8
+First few values: 964, 972
+
+Found repeat cycle from 973 to 974 (length: 2)
+Output pattern: 3,7,6,0
+Values that can be skipped: 974 to 974
+
+Regular interval found for output: 2,1,6,0
+Interval size: 3
+First few values: 977, 980
+
+Regular interval found for output: 3,1,6,0
+Interval size: 2
+First few values: 979, 981
+
+Regular interval found for output: 7,7,6,0
+Interval size: 13
+First few values: 971, 984
+
+Regular interval found for output: 1,4,6,0
+Interval size: 2
+First few values: 992, 994
+
+Regular interval found for output: 3,4,6,0
+Interval size: 2
+First few values: 995, 997
+
+Found repeat cycle from 998 to 999 (length: 2)
+Output pattern: 1,4,6,0
+Values that can be skipped: 999 to 999
+
+Analyzed 1000 values...
+Unique output patterns so far: 441
+Current output length: 7
+Binary representation of 1000: 1111101000
+Number of outputs: 4
+
+=== Final Pattern Analysis ===
+Total unique outputs: 441
+
+Top 10 most frequent outputs:
+
+Output: 1,4,7,0
+Frequency: 15
+First seen: 736
+Last seen: 938
+Sample values: 736, 738, 741, 742, 743
+Average gap between values: 1.75
+
+Output: 1,4,1,0
+Frequency: 13
+First seen: 608
+Last seen: 701
+Sample values: 608, 610, 614, 618, 622
+Average gap between values: 3.5
+
+Output: 7,4,1,0
+Frequency: 11
+First seen: 619
+Last seen: 700
+Sample values: 619, 632, 633, 635, 676
+Average gap between values: 14.25
+
+Output: 7,7,6
+Frequency: 10
+First seen: 453
+Last seen: 509
+Sample values: 453, 459, 461, 472, 475
+Average gap between values: 5.5
+
+Output: 3,4,7,0
+Frequency: 10
+First seen: 739
+Last seen: 943
+Sample values: 739, 744, 931, 932, 933
+Average gap between values: 48.5
+
+Output: 1,4,5,0
+Frequency: 8
+First seen: 777
+Last seen: 812
+Sample values: 777, 778, 780, 800, 802
+Average gap between values: 6.25
+
+Output: 3,7,6,0
+Frequency: 8
+First seen: 963
+Last seen: 989
+Sample values: 963, 965, 966, 968, 973
+Average gap between values: 2.5
+
+Output: 1,7,6
+Frequency: 7
+First seen: 448
+Last seen: 511
+Sample values: 448, 450, 457, 458, 474
+Average gap between values: 6.5
+
+Output: 7,4,3,0
+Frequency: 7
+First seen: 551
+Last seen: 575
+Sample values: 551, 555, 559, 568, 569
+Average gap between values: 4.5
+
+Output: 3,4,1,0
+Frequency: 7
+First seen: 611
+Last seen: 703
+Sample values: 611, 616, 675, 679, 680
+Average gap between values: 17.25
+
+Analyzing mathematical relationships...
+
+Constant ratio pattern found for output: 1,4,7,0
+Ratio: 1.00
+Values: 736, 738, 741, 742, 743
+{ output: '0', firstSeen: 1, lastSeen: 1, count: 1, values: [ 1 ] }
+{ output: '1', firstSeen: 2, lastSeen: 2, count: 1, values: [ 2 ] }
+{ output: '3', firstSeen: 3, lastSeen: 3, count: 1, values: [ 3 ] }
+{ output: '5', firstSeen: 4, lastSeen: 4, count: 1, values: [ 4 ] }
+{ output: '4', firstSeen: 5, lastSeen: 5, count: 1, values: [ 5 ] }
+{ output: '7', firstSeen: 6, lastSeen: 6, count: 1, values: [ 6 ] }
+{ output: '6', firstSeen: 7, lastSeen: 7, count: 1, values: [ 7 ] }
+{ output: '3,0', firstSeen: 8, lastSeen: 8, count: 1, values: [ 8 ] }
+{
+  output: '1,0',
+  firstSeen: 9,
+  lastSeen: 10,
+  count: 2,
+  values: [ 9, 10 ]
+}
+{
+  output: '7,0',
+  firstSeen: 11,
+  lastSeen: 14,
+  count: 2,
+  values: [ 11, 14 ]
+}
+{
+  output: '5,0',
+  firstSeen: 12,
+  lastSeen: 12,
+  count: 1,
+  values: [ 12 ]
+}
+{
+  output: '4,0',
+  firstSeen: 13,
+  lastSeen: 13,
+  count: 1,
+  values: [ 13 ]
+}
+{
+  output: '6,0',
+  firstSeen: 15,
+  lastSeen: 15,
+  count: 1,
+  values: [ 15 ]
+}
+{
+  output: '5,1',
+  firstSeen: 16,
+  lastSeen: 20,
+  count: 2,
+  values: [ 16, 20 ]
+}
+{
+  output: '2,1',
+  firstSeen: 17,
+  lastSeen: 17,
+  count: 1,
+  values: [ 17 ]
+}
+{
+  output: '1,1',
+  firstSeen: 18,
+  lastSeen: 18,
+  count: 1,
+  values: [ 18 ]
+}
+{
+  output: '3,1',
+  firstSeen: 19,
+  lastSeen: 19,
+  count: 1,
+  values: [ 19 ]
+}
+{
+  output: '4,1',
+  firstSeen: 21,
+  lastSeen: 21,
+  count: 1,
+  values: [ 21 ]
+}
+{
+  output: '6,1',
+  firstSeen: 22,
+  lastSeen: 23,
+  count: 2,
+  values: [ 22, 23 ]
+}
+{
+  output: '7,3',
+  firstSeen: 24,
+  lastSeen: 27,
+  count: 2,
+  values: [ 24, 27 ]
+}
+{
+  output: '3,3',
+  firstSeen: 25,
+  lastSeen: 25,
+  count: 1,
+  values: [ 25 ]
+}
+{
+  output: '1,3',
+  firstSeen: 26,
+  lastSeen: 26,
+  count: 1,
+  values: [ 26 ]
+}
+{
+  output: '5,3',
+  firstSeen: 28,
+  lastSeen: 28,
+  count: 1,
+  values: [ 28 ]
+}
+{
+  output: '4,3',
+  firstSeen: 29,
+  lastSeen: 29,
+  count: 1,
+  values: [ 29 ]
+}
+{
+  output: '6,3',
+  firstSeen: 30,
+  lastSeen: 31,
+  count: 2,
+  values: [ 30, 31 ]
+}
+{
+  output: '1,5',
+  firstSeen: 32,
+  lastSeen: 34,
+  count: 2,
+  values: [ 32, 34 ]
+}
+{
+  output: '4,5',
+  firstSeen: 33,
+  lastSeen: 37,
+  count: 2,
+  values: [ 33, 37 ]
+}
+{
+  output: '3,5',
+  firstSeen: 35,
+  lastSeen: 35,
+  count: 1,
+  values: [ 35 ]
+}
+{
+  output: '5,5',
+  firstSeen: 36,
+  lastSeen: 38,
+  count: 2,
+  values: [ 36, 38 ]
+}
+{
+  output: '7,5',
+  firstSeen: 39,
+  lastSeen: 39,
+  count: 1,
+  values: [ 39 ]
+}
+{
+  output: '3,4',
+  firstSeen: 40,
+  lastSeen: 40,
+  count: 1,
+  values: [ 40 ]
+}
+{
+  output: '5,4',
+  firstSeen: 41,
+  lastSeen: 46,
+  count: 3,
+  values: [ 41, 44, 46 ]
+}
+{
+  output: '1,4',
+  firstSeen: 42,
+  lastSeen: 42,
+  count: 1,
+  values: [ 42 ]
+}
+{
+  output: '7,4',
+  firstSeen: 43,
+  lastSeen: 47,
+  count: 2,
+  values: [ 43, 47 ]
+}
+{
+  output: '4,4',
+  firstSeen: 45,
+  lastSeen: 45,
+  count: 1,
+  values: [ 45 ]
+}
+{
+  output: '5,7',
+  firstSeen: 48,
+  lastSeen: 52,
+  count: 2,
+  values: [ 48, 52 ]
+}
+{
+  output: '6,7',
+  firstSeen: 49,
+  lastSeen: 49,
+  count: 1,
+  values: [ 49 ]
+}
+{
+  output: '1,7',
+  firstSeen: 50,
+  lastSeen: 50,
+  count: 1,
+  values: [ 50 ]
+}
+{
+  output: '3,7',
+  firstSeen: 51,
+  lastSeen: 51,
+  count: 1,
+  values: [ 51 ]
+}
+{
+  output: '4,7',
+  firstSeen: 53,
+  lastSeen: 54,
+  count: 2,
+  values: [ 53, 54 ]
+}
+{
+  output: '7,7',
+  firstSeen: 55,
+  lastSeen: 55,
+  count: 1,
+  values: [ 55 ]
+}
+{
+  output: '7,6',
+  firstSeen: 56,
+  lastSeen: 63,
+  count: 4,
+  values: [ 56, 57, 59, 63 ]
+}
+{
+  output: '1,6',
+  firstSeen: 58,
+  lastSeen: 58,
+  count: 1,
+  values: [ 58 ]
+}
+{
+  output: '5,6',
+  firstSeen: 60,
+  lastSeen: 60,
+  count: 1,
+  values: [ 60 ]
+}
+{
+  output: '4,6',
+  firstSeen: 61,
+  lastSeen: 62,
+  count: 2,
+  values: [ 61, 62 ]
+}
+{
+  output: '1,3,0',
+  firstSeen: 64,
+  lastSeen: 66,
+  count: 2,
+  values: [ 64, 66 ]
+}
+{
+  output: '0,3,0',
+  firstSeen: 65,
+  lastSeen: 65,
+  count: 1,
+  values: [ 65 ]
+}
+{
+  output: '3,3,0',
+  firstSeen: 67,
+  lastSeen: 70,
+  count: 2,
+  values: [ 67, 70 ]
+}
+{
+  output: '4,3,0',
+  firstSeen: 68,
+  lastSeen: 71,
+  count: 3,
+  values: [ 68, 69, 71 ]
+}
+{
+  output: '3,1,0',
+  firstSeen: 72,
+  lastSeen: 83,
+  count: 3,
+  values: [ 72, 78, 83 ]
+}
+{
+  output: '1,1,0',
+  firstSeen: 73,
+  lastSeen: 82,
+  count: 3,
+  values: [ 73, 74, 82 ]
+}
+{
+  output: '7,1,0',
+  firstSeen: 75,
+  lastSeen: 75,
+  count: 1,
+  values: [ 75 ]
+}
+{
+  output: '4,1,0',
+  firstSeen: 76,
+  lastSeen: 87,
+  count: 6,
+  values: [ 76, 77, 79, 84, 85 ]
+}
+{
+  output: '5,1,0',
+  firstSeen: 80,
+  lastSeen: 80,
+  count: 1,
+  values: [ 80 ]
+}
+{
+  output: '2,1,0',
+  firstSeen: 81,
+  lastSeen: 86,
+  count: 2,
+  values: [ 81, 86 ]
+}
+{
+  output: '7,7,0',
+  firstSeen: 88,
+  lastSeen: 91,
+  count: 2,
+  values: [ 88, 91 ]
+}
+{
+  output: '3,7,0',
+  firstSeen: 89,
+  lastSeen: 115,
+  count: 2,
+  values: [ 89, 115 ]
+}
+{
+  output: '1,7,0',
+  firstSeen: 90,
+  lastSeen: 114,
+  count: 2,
+  values: [ 90, 114 ]
+}
+{
+  output: '4,7,0',
+  firstSeen: 92,
+  lastSeen: 117,
+  count: 5,
+  values: [ 92, 93, 95, 116, 117 ]
+}
+{
+  output: '2,7,0',
+  firstSeen: 94,
+  lastSeen: 94,
+  count: 1,
+  values: [ 94 ]
+}
+{
+  output: '1,5,0',
+  firstSeen: 96,
+  lastSeen: 102,
+  count: 3,
+  values: [ 96, 98, 102 ]
+}
+{
+  output: '4,5,0',
+  firstSeen: 97,
+  lastSeen: 101,
+  count: 3,
+  values: [ 97, 100, 101 ]
+}
+{
+  output: '3,5,0',
+  firstSeen: 99,
+  lastSeen: 99,
+  count: 1,
+  values: [ 99 ]
+}
+{
+  output: '5,5,0',
+  firstSeen: 103,
+  lastSeen: 103,
+  count: 1,
+  values: [ 103 ]
+}
+{
+  output: '3,4,0',
+  firstSeen: 104,
+  lastSeen: 104,
+  count: 1,
+  values: [ 104 ]
+}
+{
+  output: '5,4,0',
+  firstSeen: 105,
+  lastSeen: 111,
+  count: 2,
+  values: [ 105, 111 ]
+}
+{
+  output: '1,4,0',
+  firstSeen: 106,
+  lastSeen: 110,
+  count: 2,
+  values: [ 106, 110 ]
+}
+{
+  output: '7,4,0',
+  firstSeen: 107,
+  lastSeen: 107,
+  count: 1,
+  values: [ 107 ]
+}
+{
+  output: '4,4,0',
+  firstSeen: 108,
+  lastSeen: 109,
+  count: 2,
+  values: [ 108, 109 ]
+}
+{
+  output: '5,7,0',
+  firstSeen: 112,
+  lastSeen: 119,
+  count: 2,
+  values: [ 112, 119 ]
+}
+{
+  output: '6,7,0',
+  firstSeen: 113,
+  lastSeen: 113,
+  count: 1,
+  values: [ 113 ]
+}
+{
+  output: '0,7,0',
+  firstSeen: 118,
+  lastSeen: 118,
+  count: 1,
+  values: [ 118 ]
+}
+{
+  output: '7,6,0',
+  firstSeen: 120,
+  lastSeen: 123,
+  count: 3,
+  values: [ 120, 121, 123 ]
+}
+{
+  output: '1,6,0',
+  firstSeen: 122,
+  lastSeen: 122,
+  count: 1,
+  values: [ 122 ]
+}
+{
+  output: '4,6,0',
+  firstSeen: 124,
+  lastSeen: 125,
+  count: 2,
+  values: [ 124, 125 ]
+}
+{
+  output: '0,6,0',
+  firstSeen: 126,
+  lastSeen: 126,
+  count: 1,
+  values: [ 126 ]
+}
+{
+  output: '5,6,0',
+  firstSeen: 127,
+  lastSeen: 127,
+  count: 1,
+  values: [ 127 ]
+}
+{
+  output: '1,5,1',
+  firstSeen: 128,
+  lastSeen: 162,
+  count: 4,
+  values: [ 128, 130, 160, 162 ]
+}
+{
+  output: '0,5,1',
+  firstSeen: 129,
+  lastSeen: 129,
+  count: 1,
+  values: [ 129 ]
+}
+{
+  output: '3,5,1',
+  firstSeen: 131,
+  lastSeen: 167,
+  count: 3,
+  values: [ 131, 163, 167 ]
+}
+{
+  output: '7,5,1',
+  firstSeen: 132,
+  lastSeen: 164,
+  count: 3,
+  values: [ 132, 134, 164 ]
+}
+{
+  output: '5,5,1',
+  firstSeen: 133,
+  lastSeen: 166,
+  count: 3,
+  values: [ 133, 165, 166 ]
+}
+{
+  output: '2,5,1',
+  firstSeen: 135,
+  lastSeen: 135,
+  count: 1,
+  values: [ 135 ]
+}
+{
+  output: '3,2,1',
+  firstSeen: 136,
+  lastSeen: 136,
+  count: 1,
+  values: [ 136 ]
+}
+{
+  output: '1,2,1',
+  firstSeen: 137,
+  lastSeen: 138,
+  count: 2,
+  values: [ 137, 138 ]
+}
+{
+  output: '7,2,1',
+  firstSeen: 139,
+  lastSeen: 142,
+  count: 3,
+  values: [ 139, 140, 142 ]
+}
+{
+  output: '5,2,1',
+  firstSeen: 141,
+  lastSeen: 141,
+  count: 1,
+  values: [ 141 ]
+}
+{
+  output: '2,2,1',
+  firstSeen: 143,
+  lastSeen: 143,
+  count: 1,
+  values: [ 143 ]
+}
+{
+  output: '5,1,1',
+  firstSeen: 144,
+  lastSeen: 149,
+  count: 2,
+  values: [ 144, 149 ]
+}
+{
+  output: '2,1,1',
+  firstSeen: 145,
+  lastSeen: 151,
+  count: 2,
+  values: [ 145, 151 ]
+}
+{
+  output: '1,1,1',
+  firstSeen: 146,
+  lastSeen: 146,
+  count: 1,
+  values: [ 146 ]
+}
+{
+  output: '3,1,1',
+  firstSeen: 147,
+  lastSeen: 147,
+  count: 1,
+  values: [ 147 ]
+}
+{
+  output: '7,1,1',
+  firstSeen: 148,
+  lastSeen: 148,
+  count: 1,
+  values: [ 148 ]
+}
+{
+  output: '6,1,1',
+  firstSeen: 150,
+  lastSeen: 150,
+  count: 1,
+  values: [ 150 ]
+}
+{
+  output: '7,3,1',
+  firstSeen: 152,
+  lastSeen: 156,
+  count: 3,
+  values: [ 152, 155, 156 ]
+}
+{
+  output: '3,3,1',
+  firstSeen: 153,
+  lastSeen: 153,
+  count: 1,
+  values: [ 153 ]
+}
+{
+  output: '1,3,1',
+  firstSeen: 154,
+  lastSeen: 154,
+  count: 1,
+  values: [ 154 ]
+}
+{
+  output: '5,3,1',
+  firstSeen: 157,
+  lastSeen: 157,
+  count: 1,
+  values: [ 157 ]
+}
+{
+  output: '6,3,1',
+  firstSeen: 158,
+  lastSeen: 158,
+  count: 1,
+  values: [ 158 ]
+}
+{
+  output: '2,3,1',
+  firstSeen: 159,
+  lastSeen: 159,
+  count: 1,
+  values: [ 159 ]
+}
+{
+  output: '4,5,1',
+  firstSeen: 161,
+  lastSeen: 161,
+  count: 1,
+  values: [ 161 ]
+}
+{
+  output: '3,4,1',
+  firstSeen: 168,
+  lastSeen: 175,
+  count: 2,
+  values: [ 168, 175 ]
+}
+{
+  output: '5,4,1',
+  firstSeen: 169,
+  lastSeen: 174,
+  count: 3,
+  values: [ 169, 173, 174 ]
+}
+{
+  output: '1,4,1',
+  firstSeen: 170,
+  lastSeen: 170,
+  count: 1,
+  values: [ 170 ]
+}
+{
+  output: '7,4,1',
+  firstSeen: 171,
+  lastSeen: 172,
+  count: 2,
+  values: [ 171, 172 ]
+}
+{
+  output: '5,6,1',
+  firstSeen: 176,
+  lastSeen: 189,
+  count: 3,
+  values: [ 176, 181, 189 ]
+}
+{
+  output: '6,6,1',
+  firstSeen: 177,
+  lastSeen: 177,
+  count: 1,
+  values: [ 177 ]
+}
+{
+  output: '1,6,1',
+  firstSeen: 178,
+  lastSeen: 186,
+  count: 2,
+  values: [ 178, 186 ]
+}
+{
+  output: '3,6,1',
+  firstSeen: 179,
+  lastSeen: 191,
+  count: 3,
+  values: [ 179, 183, 191 ]
+}
+{
+  output: '7,6,1',
+  firstSeen: 180,
+  lastSeen: 188,
+  count: 5,
+  values: [ 180, 184, 185, 187, 188 ]
+}
+{
+  output: '4,6,1',
+  firstSeen: 182,
+  lastSeen: 190,
+  count: 2,
+  values: [ 182, 190 ]
+}
+{
+  output: '1,7,3',
+  firstSeen: 192,
+  lastSeen: 218,
+  count: 3,
+  values: [ 192, 194, 218 ]
+}
+{
+  output: '0,7,3',
+  firstSeen: 193,
+  lastSeen: 223,
+  count: 3,
+  values: [ 193, 199, 223 ]
+}
+{
+  output: '3,7,3',
+  firstSeen: 195,
+  lastSeen: 217,
+  count: 3,
+  values: [ 195, 198, 217 ]
+}
+{
+  output: '6,7,3',
+  firstSeen: 196,
+  lastSeen: 220,
+  count: 2,
+  values: [ 196, 220 ]
+}
+{
+  output: '5,7,3',
+  firstSeen: 197,
+  lastSeen: 221,
+  count: 2,
+  values: [ 197, 221 ]
+}
+{
+  output: '3,3,3',
+  firstSeen: 200,
+  lastSeen: 206,
+  count: 2,
+  values: [ 200, 206 ]
+}
+{
+  output: '1,3,3',
+  firstSeen: 201,
+  lastSeen: 202,
+  count: 2,
+  values: [ 201, 202 ]
+}
+{
+  output: '7,3,3',
+  firstSeen: 203,
+  lastSeen: 203,
+  count: 1,
+  values: [ 203 ]
+}
+{
+  output: '6,3,3',
+  firstSeen: 204,
+  lastSeen: 204,
+  count: 1,
+  values: [ 204 ]
+}
+{
+  output: '5,3,3',
+  firstSeen: 205,
+  lastSeen: 205,
+  count: 1,
+  values: [ 205 ]
+}
+{
+  output: '0,3,3',
+  firstSeen: 207,
+  lastSeen: 207,
+  count: 1,
+  values: [ 207 ]
+}
+{
+  output: '5,1,3',
+  firstSeen: 208,
+  lastSeen: 213,
+  count: 2,
+  values: [ 208, 213 ]
+}
+{
+  output: '2,1,3',
+  firstSeen: 209,
+  lastSeen: 214,
+  count: 2,
+  values: [ 209, 214 ]
+}
+{
+  output: '1,1,3',
+  firstSeen: 210,
+  lastSeen: 210,
+  count: 1,
+  values: [ 210 ]
+}
+{
+  output: '3,1,3',
+  firstSeen: 211,
+  lastSeen: 211,
+  count: 1,
+  values: [ 211 ]
+}
+{
+  output: '6,1,3',
+  firstSeen: 212,
+  lastSeen: 212,
+  count: 1,
+  values: [ 212 ]
+}
+{
+  output: '0,1,3',
+  firstSeen: 215,
+  lastSeen: 215,
+  count: 1,
+  values: [ 215 ]
+}
+{
+  output: '7,7,3',
+  firstSeen: 216,
+  lastSeen: 219,
+  count: 2,
+  values: [ 216, 219 ]
+}
+{
+  output: '2,7,3',
+  firstSeen: 222,
+  lastSeen: 222,
+  count: 1,
+  values: [ 222 ]
+}
+{
+  output: '1,5,3',
+  firstSeen: 224,
+  lastSeen: 231,
+  count: 4,
+  values: [ 224, 226, 230, 231 ]
+}
+{
+  output: '4,5,3',
+  firstSeen: 225,
+  lastSeen: 225,
+  count: 1,
+  values: [ 225 ]
+}
+{
+  output: '3,5,3',
+  firstSeen: 227,
+  lastSeen: 227,
+  count: 1,
+  values: [ 227 ]
+}
+{
+  output: '6,5,3',
+  firstSeen: 228,
+  lastSeen: 228,
+  count: 1,
+  values: [ 228 ]
+}
+{
+  output: '5,5,3',
+  firstSeen: 229,
+  lastSeen: 229,
+  count: 1,
+  values: [ 229 ]
+}
+{
+  output: '3,4,3',
+  firstSeen: 232,
+  lastSeen: 232,
+  count: 1,
+  values: [ 232 ]
+}
+{
+  output: '5,4,3',
+  firstSeen: 233,
+  lastSeen: 237,
+  count: 2,
+  values: [ 233, 237 ]
+}
+{
+  output: '1,4,3',
+  firstSeen: 234,
+  lastSeen: 239,
+  count: 3,
+  values: [ 234, 238, 239 ]
+}
+{
+  output: '7,4,3',
+  firstSeen: 235,
+  lastSeen: 235,
+  count: 1,
+  values: [ 235 ]
+}
+{
+  output: '6,4,3',
+  firstSeen: 236,
+  lastSeen: 236,
+  count: 1,
+  values: [ 236 ]
+}
+{
+  output: '5,6,3',
+  firstSeen: 240,
+  lastSeen: 253,
+  count: 3,
+  values: [ 240, 245, 253 ]
+}
+{
+  output: '6,6,3',
+  firstSeen: 241,
+  lastSeen: 252,
+  count: 3,
+  values: [ 241, 244, 252 ]
+}
+{
+  output: '1,6,3',
+  firstSeen: 242,
+  lastSeen: 255,
+  count: 4,
+  values: [ 242, 247, 250, 255 ]
+}
+{
+  output: '3,6,3',
+  firstSeen: 243,
+  lastSeen: 243,
+  count: 1,
+  values: [ 243 ]
+}
+{
+  output: '0,6,3',
+  firstSeen: 246,
+  lastSeen: 254,
+  count: 2,
+  values: [ 246, 254 ]
+}
+{
+  output: '7,6,3',
+  firstSeen: 248,
+  lastSeen: 251,
+  count: 3,
+  values: [ 248, 249, 251 ]
+}
+{
+  output: '1,1,5',
+  firstSeen: 256,
+  lastSeen: 276,
+  count: 5,
+  values: [ 256, 258, 260, 274, 276 ]
+}
+{
+  output: '0,1,5',
+  firstSeen: 257,
+  lastSeen: 257,
+  count: 1,
+  values: [ 257 ]
+}
+{
+  output: '3,1,5',
+  firstSeen: 259,
+  lastSeen: 275,
+  count: 2,
+  values: [ 259, 275 ]
+}
+{
+  output: '6,1,5',
+  firstSeen: 261,
+  lastSeen: 279,
+  count: 5,
+  values: [ 261, 263, 277, 278, 279 ]
+}
+{
+  output: '7,1,5',
+  firstSeen: 262,
+  lastSeen: 262,
+  count: 1,
+  values: [ 262 ]
+}
+{
+  output: '3,4,5',
+  firstSeen: 264,
+  lastSeen: 296,
+  count: 2,
+  values: [ 264, 296 ]
+}
+{
+  output: '1,4,5',
+  firstSeen: 265,
+  lastSeen: 300,
+  count: 5,
+  values: [ 265, 266, 268, 298, 300 ]
+}
+{
+  output: '7,4,5',
+  firstSeen: 267,
+  lastSeen: 303,
+  count: 4,
+  values: [ 267, 270, 299, 303 ]
+}
+{
+  output: '6,4,5',
+  firstSeen: 269,
+  lastSeen: 301,
+  count: 3,
+  values: [ 269, 271, 301 ]
+}
+{
+  output: '5,1,5',
+  firstSeen: 272,
+  lastSeen: 272,
+  count: 1,
+  values: [ 272 ]
+}
+{
+  output: '2,1,5',
+  firstSeen: 273,
+  lastSeen: 273,
+  count: 1,
+  values: [ 273 ]
+}
+{
+  output: '7,3,5',
+  firstSeen: 280,
+  lastSeen: 283,
+  count: 2,
+  values: [ 280, 283 ]
+}
+{
+  output: '3,3,5',
+  firstSeen: 281,
+  lastSeen: 281,
+  count: 1,
+  values: [ 281 ]
+}
+{
+  output: '1,3,5',
+  firstSeen: 282,
+  lastSeen: 284,
+  count: 2,
+  values: [ 282, 284 ]
+}
+{
+  output: '6,3,5',
+  firstSeen: 285,
+  lastSeen: 287,
+  count: 3,
+  values: [ 285, 286, 287 ]
+}
+{
+  output: '1,5,5',
+  firstSeen: 288,
+  lastSeen: 308,
+  count: 5,
+  values: [ 288, 290, 292, 306, 308 ]
+}
+{
+  output: '4,5,5',
+  firstSeen: 289,
+  lastSeen: 310,
+  count: 2,
+  values: [ 289, 310 ]
+}
+{
+  output: '3,5,5',
+  firstSeen: 291,
+  lastSeen: 307,
+  count: 2,
+  values: [ 291, 307 ]
+}
+{
+  output: '6,5,5',
+  firstSeen: 293,
+  lastSeen: 309,
+  count: 3,
+  values: [ 293, 305, 309 ]
+}
+{
+  output: '5,5,5',
+  firstSeen: 294,
+  lastSeen: 304,
+  count: 2,
+  values: [ 294, 304 ]
+}
+{
+  output: '7,5,5',
+  firstSeen: 295,
+  lastSeen: 311,
+  count: 2,
+  values: [ 295, 311 ]
+}
+{
+  output: '5,4,5',
+  firstSeen: 297,
+  lastSeen: 302,
+  count: 2,
+  values: [ 297, 302 ]
+}
+{
+  output: '7,7,5',
+  firstSeen: 312,
+  lastSeen: 319,
+  count: 4,
+  values: [ 312, 313, 315, 319 ]
+}
+{
+  output: '1,7,5',
+  firstSeen: 314,
+  lastSeen: 316,
+  count: 2,
+  values: [ 314, 316 ]
+}
+{
+  output: '6,7,5',
+  firstSeen: 317,
+  lastSeen: 317,
+  count: 1,
+  values: [ 317 ]
+}
+{
+  output: '4,7,5',
+  firstSeen: 318,
+  lastSeen: 318,
+  count: 1,
+  values: [ 318 ]
+}
+{
+  output: '1,3,4',
+  firstSeen: 320,
+  lastSeen: 322,
+  count: 2,
+  values: [ 320, 322 ]
+}
+{
+  output: '0,3,4',
+  firstSeen: 321,
+  lastSeen: 324,
+  count: 2,
+  values: [ 321, 324 ]
+}
+{
+  output: '3,3,4',
+  firstSeen: 323,
+  lastSeen: 326,
+  count: 2,
+  values: [ 323, 326 ]
+}
+{
+  output: '6,3,4',
+  firstSeen: 325,
+  lastSeen: 325,
+  count: 1,
+  values: [ 325 ]
+}
+{
+  output: '4,3,4',
+  firstSeen: 327,
+  lastSeen: 327,
+  count: 1,
+  values: [ 327 ]
+}
+{
+  output: '3,5,4',
+  firstSeen: 328,
+  lastSeen: 371,
+  count: 4,
+  values: [ 328, 334, 355, 371 ]
+}
+{
+  output: '1,5,4',
+  firstSeen: 329,
+  lastSeen: 370,
+  count: 6,
+  values: [ 329, 330, 352, 354, 358 ]
+}
+{
+  output: '7,5,4',
+  firstSeen: 331,
+  lastSeen: 331,
+  count: 1,
+  values: [ 331 ]
+}
+{
+  output: '0,5,4',
+  firstSeen: 332,
+  lastSeen: 374,
+  count: 4,
+  values: [ 332, 356, 372, 374 ]
+}
+{
+  output: '6,5,4',
+  firstSeen: 333,
+  lastSeen: 373,
+  count: 4,
+  values: [ 333, 357, 369, 373 ]
+}
+{
+  output: '4,5,4',
+  firstSeen: 335,
+  lastSeen: 353,
+  count: 2,
+  values: [ 335, 353 ]
+}
+{
+  output: '5,1,4',
+  firstSeen: 336,
+  lastSeen: 336,
+  count: 1,
+  values: [ 336 ]
+}
+{
+  output: '2,1,4',
+  firstSeen: 337,
+  lastSeen: 342,
+  count: 2,
+  values: [ 337, 342 ]
+}
+{
+  output: '1,1,4',
+  firstSeen: 338,
+  lastSeen: 338,
+  count: 1,
+  values: [ 338 ]
+}
+{
+  output: '3,1,4',
+  firstSeen: 339,
+  lastSeen: 339,
+  count: 1,
+  values: [ 339 ]
+}
+{
+  output: '0,1,4',
+  firstSeen: 340,
+  lastSeen: 340,
+  count: 1,
+  values: [ 340 ]
+}
+{
+  output: '6,1,4',
+  firstSeen: 341,
+  lastSeen: 341,
+  count: 1,
+  values: [ 341 ]
+}
+{
+  output: '4,1,4',
+  firstSeen: 343,
+  lastSeen: 343,
+  count: 1,
+  values: [ 343 ]
+}
+{
+  output: '7,7,4',
+  firstSeen: 344,
+  lastSeen: 379,
+  count: 5,
+  values: [ 344, 347, 376, 377, 379 ]
+}
+{
+  output: '3,7,4',
+  firstSeen: 345,
+  lastSeen: 345,
+  count: 1,
+  values: [ 345 ]
+}
+{
+  output: '1,7,4',
+  firstSeen: 346,
+  lastSeen: 378,
+  count: 2,
+  values: [ 346, 378 ]
+}
+{
+  output: '0,7,4',
+  firstSeen: 348,
+  lastSeen: 382,
+  count: 3,
+  values: [ 348, 380, 382 ]
+}
+{
+  output: '6,7,4',
+  firstSeen: 349,
+  lastSeen: 381,
+  count: 2,
+  values: [ 349, 381 ]
+}
+{
+  output: '2,7,4',
+  firstSeen: 350,
+  lastSeen: 350,
+  count: 1,
+  values: [ 350 ]
+}
+{
+  output: '4,7,4',
+  firstSeen: 351,
+  lastSeen: 351,
+  count: 1,
+  values: [ 351 ]
+}
+{
+  output: '5,5,4',
+  firstSeen: 359,
+  lastSeen: 375,
+  count: 3,
+  values: [ 359, 368, 375 ]
+}
+{
+  output: '3,4,4',
+  firstSeen: 360,
+  lastSeen: 360,
+  count: 1,
+  values: [ 360 ]
+}
+{
+  output: '5,4,4',
+  firstSeen: 361,
+  lastSeen: 367,
+  count: 2,
+  values: [ 361, 367 ]
+}
+{
+  output: '1,4,4',
+  firstSeen: 362,
+  lastSeen: 366,
+  count: 2,
+  values: [ 362, 366 ]
+}
+{
+  output: '7,4,4',
+  firstSeen: 363,
+  lastSeen: 363,
+  count: 1,
+  values: [ 363 ]
+}
+{
+  output: '0,4,4',
+  firstSeen: 364,
+  lastSeen: 364,
+  count: 1,
+  values: [ 364 ]
+}
+{
+  output: '6,4,4',
+  firstSeen: 365,
+  lastSeen: 365,
+  count: 1,
+  values: [ 365 ]
+}
+{
+  output: '5,7,4',
+  firstSeen: 383,
+  lastSeen: 383,
+  count: 1,
+  values: [ 383 ]
+}
+{
+  output: '1,5,7',
+  firstSeen: 384,
+  lastSeen: 418,
+  count: 4,
+  values: [ 384, 386, 416, 418 ]
+}
+{
+  output: '0,5,7',
+  firstSeen: 385,
+  lastSeen: 385,
+  count: 1,
+  values: [ 385 ]
+}
+{
+  output: '3,5,7',
+  firstSeen: 387,
+  lastSeen: 423,
+  count: 5,
+  values: [ 387, 388, 419, 420, 423 ]
+}
+{
+  output: '7,5,7',
+  firstSeen: 389,
+  lastSeen: 421,
+  count: 3,
+  values: [ 389, 390, 421 ]
+}
+{
+  output: '2,5,7',
+  firstSeen: 391,
+  lastSeen: 391,
+  count: 1,
+  values: [ 391 ]
+}
+{
+  output: '3,6,7',
+  firstSeen: 392,
+  lastSeen: 396,
+  count: 2,
+  values: [ 392, 396 ]
+}
+{
+  output: '1,6,7',
+  firstSeen: 393,
+  lastSeen: 394,
+  count: 2,
+  values: [ 393, 394 ]
+}
+{
+  output: '7,6,7',
+  firstSeen: 395,
+  lastSeen: 398,
+  count: 3,
+  values: [ 395, 397, 398 ]
+}
+{
+  output: '2,6,7',
+  firstSeen: 399,
+  lastSeen: 399,
+  count: 1,
+  values: [ 399 ]
+}
+{
+  output: '5,1,7',
+  firstSeen: 400,
+  lastSeen: 400,
+  count: 1,
+  values: [ 400 ]
+}
+{
+  output: '2,1,7',
+  firstSeen: 401,
+  lastSeen: 407,
+  count: 2,
+  values: [ 401, 407 ]
+}
+{
+  output: '1,1,7',
+  firstSeen: 402,
+  lastSeen: 402,
+  count: 1,
+  values: [ 402 ]
+}
+{
+  output: '3,1,7',
+  firstSeen: 403,
+  lastSeen: 404,
+  count: 2,
+  values: [ 403, 404 ]
+}
+{
+  output: '7,1,7',
+  firstSeen: 405,
+  lastSeen: 405,
+  count: 1,
+  values: [ 405 ]
+}
+{
+  output: '6,1,7',
+  firstSeen: 406,
+  lastSeen: 406,
+  count: 1,
+  values: [ 406 ]
+}
+{
+  output: '7,3,7',
+  firstSeen: 408,
+  lastSeen: 413,
+  count: 3,
+  values: [ 408, 411, 413 ]
+}
+{
+  output: '3,3,7',
+  firstSeen: 409,
+  lastSeen: 412,
+  count: 2,
+  values: [ 409, 412 ]
+}
+{
+  output: '1,3,7',
+  firstSeen: 410,
+  lastSeen: 410,
+  count: 1,
+  values: [ 410 ]
+}
+{
+  output: '6,3,7',
+  firstSeen: 414,
+  lastSeen: 414,
+  count: 1,
+  values: [ 414 ]
+}
+{
+  output: '2,3,7',
+  firstSeen: 415,
+  lastSeen: 415,
+  count: 1,
+  values: [ 415 ]
+}
+{
+  output: '4,5,7',
+  firstSeen: 417,
+  lastSeen: 417,
+  count: 1,
+  values: [ 417 ]
+}
+{
+  output: '5,5,7',
+  firstSeen: 422,
+  lastSeen: 422,
+  count: 1,
+  values: [ 422 ]
+}
+{
+  output: '3,4,7',
+  firstSeen: 424,
+  lastSeen: 439,
+  count: 6,
+  values: [ 424, 428, 431, 435, 436 ]
+}
+{
+  output: '5,4,7',
+  firstSeen: 425,
+  lastSeen: 432,
+  count: 3,
+  values: [ 425, 430, 432 ]
+}
+{
+  output: '1,4,7',
+  firstSeen: 426,
+  lastSeen: 434,
+  count: 2,
+  values: [ 426, 434 ]
+}
+{
+  output: '7,4,7',
+  firstSeen: 427,
+  lastSeen: 437,
+  count: 3,
+  values: [ 427, 429, 437 ]
+}
+{
+  output: '6,4,7',
+  firstSeen: 433,
+  lastSeen: 433,
+  count: 1,
+  values: [ 433 ]
+}
+{
+  output: '4,4,7',
+  firstSeen: 438,
+  lastSeen: 438,
+  count: 1,
+  values: [ 438 ]
+}
+{
+  output: '7,7,7',
+  firstSeen: 440,
+  lastSeen: 445,
+  count: 4,
+  values: [ 440, 441, 443, 445 ]
+}
+{
+  output: '1,7,7',
+  firstSeen: 442,
+  lastSeen: 442,
+  count: 1,
+  values: [ 442 ]
+}
+{
+  output: '3,7,7',
+  firstSeen: 444,
+  lastSeen: 447,
+  count: 2,
+  values: [ 444, 447 ]
+}
+{
+  output: '4,7,7',
+  firstSeen: 446,
+  lastSeen: 446,
+  count: 1,
+  values: [ 446 ]
+}
+{
+  output: '1,7,6',
+  firstSeen: 448,
+  lastSeen: 511,
+  count: 7,
+  values: [ 448, 450, 457, 458, 474 ]
+}
+{
+  output: '0,7,6',
+  firstSeen: 449,
+  lastSeen: 510,
+  count: 5,
+  values: [ 449, 455, 463, 479, 510 ]
+}
+{
+  output: '3,7,6',
+  firstSeen: 451,
+  lastSeen: 473,
+  count: 5,
+  values: [ 451, 454, 456, 462, 473 ]
+}
+{
+  output: '2,7,6',
+  firstSeen: 452,
+  lastSeen: 508,
+  count: 5,
+  values: [ 452, 460, 476, 478, 508 ]
+}
+{
+  output: '7,7,6',
+  firstSeen: 453,
+  lastSeen: 509,
+  count: 10,
+  values: [ 453, 459, 461, 472, 475 ]
+}
+{
+  output: '5,1,6',
+  firstSeen: 464,
+  lastSeen: 464,
+  count: 1,
+  values: [ 464 ]
+}
+{
+  output: '2,1,6',
+  firstSeen: 465,
+  lastSeen: 470,
+  count: 3,
+  values: [ 465, 468, 470 ]
+}
+{
+  output: '1,1,6',
+  firstSeen: 466,
+  lastSeen: 466,
+  count: 1,
+  values: [ 466 ]
+}
+{
+  output: '3,1,6',
+  firstSeen: 467,
+  lastSeen: 467,
+  count: 1,
+  values: [ 467 ]
+}
+{
+  output: '7,1,6',
+  firstSeen: 469,
+  lastSeen: 469,
+  count: 1,
+  values: [ 469 ]
+}
+{
+  output: '0,1,6',
+  firstSeen: 471,
+  lastSeen: 471,
+  count: 1,
+  values: [ 471 ]
+}
+{
+  output: '1,5,6',
+  firstSeen: 480,
+  lastSeen: 487,
+  count: 4,
+  values: [ 480, 482, 486, 487 ]
+}
+{
+  output: '4,5,6',
+  firstSeen: 481,
+  lastSeen: 481,
+  count: 1,
+  values: [ 481 ]
+}
+{
+  output: '3,5,6',
+  firstSeen: 483,
+  lastSeen: 483,
+  count: 1,
+  values: [ 483 ]
+}
+{
+  output: '2,5,6',
+  firstSeen: 484,
+  lastSeen: 484,
+  count: 1,
+  values: [ 484 ]
+}
+{
+  output: '7,5,6',
+  firstSeen: 485,
+  lastSeen: 485,
+  count: 1,
+  values: [ 485 ]
+}
+{
+  output: '3,4,6',
+  firstSeen: 488,
+  lastSeen: 499,
+  count: 2,
+  values: [ 488, 499 ]
+}
+{
+  output: '5,4,6',
+  firstSeen: 489,
+  lastSeen: 496,
+  count: 2,
+  values: [ 489, 496 ]
+}
+{
+  output: '1,4,6',
+  firstSeen: 490,
+  lastSeen: 503,
+  count: 5,
+  values: [ 490, 494, 495, 498, 503 ]
+}
+{
+  output: '7,4,6',
+  firstSeen: 491,
+  lastSeen: 501,
+  count: 3,
+  values: [ 491, 493, 501 ]
+}
+{
+  output: '2,4,6',
+  firstSeen: 492,
+  lastSeen: 500,
+  count: 2,
+  values: [ 492, 500 ]
+}
+{
+  output: '6,4,6',
+  firstSeen: 497,
+  lastSeen: 497,
+  count: 1,
+  values: [ 497 ]
+}
+{
+  output: '0,4,6',
+  firstSeen: 502,
+  lastSeen: 502,
+  count: 1,
+  values: [ 502 ]
+}
+{
+  output: '1,1,3,0',
+  firstSeen: 512,
+  lastSeen: 530,
+  count: 3,
+  values: [ 512, 514, 530 ]
+}
+{
+  output: '0,1,3,0',
+  firstSeen: 513,
+  lastSeen: 533,
+  count: 3,
+  values: [ 513, 517, 533 ]
+}
+{
+  output: '3,1,3,0',
+  firstSeen: 515,
+  lastSeen: 531,
+  count: 2,
+  values: [ 515, 531 ]
+}
+{
+  output: '5,1,3,0',
+  firstSeen: 516,
+  lastSeen: 532,
+  count: 3,
+  values: [ 516, 528, 532 ]
+}
+{
+  output: '7,1,3,0',
+  firstSeen: 518,
+  lastSeen: 518,
+  count: 1,
+  values: [ 518 ]
+}
+{
+  output: '6,1,3,0',
+  firstSeen: 519,
+  lastSeen: 535,
+  count: 3,
+  values: [ 519, 534, 535 ]
+}
+{
+  output: '3,0,3,0',
+  firstSeen: 520,
+  lastSeen: 520,
+  count: 1,
+  values: [ 520 ]
+}
+{
+  output: '1,0,3,0',
+  firstSeen: 521,
+  lastSeen: 522,
+  count: 2,
+  values: [ 521, 522 ]
+}
+{
+  output: '7,0,3,0',
+  firstSeen: 523,
+  lastSeen: 526,
+  count: 2,
+  values: [ 523, 526 ]
+}
+{
+  output: '5,0,3,0',
+  firstSeen: 524,
+  lastSeen: 524,
+  count: 1,
+  values: [ 524 ]
+}
+{
+  output: '0,0,3,0',
+  firstSeen: 525,
+  lastSeen: 525,
+  count: 1,
+  values: [ 525 ]
+}
+{
+  output: '6,0,3,0',
+  firstSeen: 527,
+  lastSeen: 527,
+  count: 1,
+  values: [ 527 ]
+}
+{
+  output: '2,1,3,0',
+  firstSeen: 529,
+  lastSeen: 529,
+  count: 1,
+  values: [ 529 ]
+}
+{
+  output: '7,3,3,0',
+  firstSeen: 536,
+  lastSeen: 567,
+  count: 3,
+  values: [ 536, 539, 567 ]
+}
+{
+  output: '3,3,3,0',
+  firstSeen: 537,
+  lastSeen: 563,
+  count: 2,
+  values: [ 537, 563 ]
+}
+{
+  output: '1,3,3,0',
+  firstSeen: 538,
+  lastSeen: 562,
+  count: 2,
+  values: [ 538, 562 ]
+}
+{
+  output: '5,3,3,0',
+  firstSeen: 540,
+  lastSeen: 564,
+  count: 3,
+  values: [ 540, 560, 564 ]
+}
+{
+  output: '0,3,3,0',
+  firstSeen: 541,
+  lastSeen: 565,
+  count: 2,
+  values: [ 541, 565 ]
+}
+{
+  output: '6,3,3,0',
+  firstSeen: 542,
+  lastSeen: 561,
+  count: 3,
+  values: [ 542, 543, 561 ]
+}
+{
+  output: '1,4,3,0',
+  firstSeen: 544,
+  lastSeen: 570,
+  count: 4,
+  values: [ 544, 546, 554, 570 ]
+}
+{
+  output: '4,4,3,0',
+  firstSeen: 545,
+  lastSeen: 574,
+  count: 2,
+  values: [ 545, 574 ]
+}
+{
+  output: '3,4,3,0',
+  firstSeen: 547,
+  lastSeen: 552,
+  count: 2,
+  values: [ 547, 552 ]
+}
+{
+  output: '5,4,3,0',
+  firstSeen: 548,
+  lastSeen: 572,
+  count: 6,
+  values: [ 548, 550, 553, 556, 558 ]
+}
+{
+  output: '0,4,3,0',
+  firstSeen: 549,
+  lastSeen: 573,
+  count: 3,
+  values: [ 549, 557, 573 ]
+}
+{
+  output: '7,4,3,0',
+  firstSeen: 551,
+  lastSeen: 575,
+  count: 7,
+  values: [ 551, 555, 559, 568, 569 ]
+}
+{
+  output: '4,3,3,0',
+  firstSeen: 566,
+  lastSeen: 566,
+  count: 1,
+  values: [ 566 ]
+}
+{
+  output: '1,3,1,0',
+  firstSeen: 576,
+  lastSeen: 669,
+  count: 5,
+  values: [ 576, 578, 626, 666, 669 ]
+}
+{
+  output: '0,3,1,0',
+  firstSeen: 577,
+  lastSeen: 630,
+  count: 4,
+  values: [ 577, 581, 629, 630 ]
+}
+{
+  output: '3,3,1,0',
+  firstSeen: 579,
+  lastSeen: 665,
+  count: 4,
+  values: [ 579, 582, 627, 665 ]
+}
+{
+  output: '4,3,1,0',
+  firstSeen: 580,
+  lastSeen: 628,
+  count: 3,
+  values: [ 580, 583, 628 ]
+}
+{
+  output: '3,1,1,0',
+  firstSeen: 584,
+  lastSeen: 659,
+  count: 4,
+  values: [ 584, 590, 595, 659 ]
+}
+{
+  output: '1,1,1,0',
+  firstSeen: 585,
+  lastSeen: 661,
+  count: 5,
+  values: [ 585, 586, 594, 658, 661 ]
+}
+{
+  output: '7,1,1,0',
+  firstSeen: 587,
+  lastSeen: 660,
+  count: 2,
+  values: [ 587, 660 ]
+}
+{
+  output: '4,1,1,0',
+  firstSeen: 588,
+  lastSeen: 599,
+  count: 4,
+  values: [ 588, 591, 596, 599 ]
+}
+{
+  output: '0,1,1,0',
+  firstSeen: 589,
+  lastSeen: 597,
+  count: 2,
+  values: [ 589, 597 ]
+}
+{
+  output: '5,1,1,0',
+  firstSeen: 592,
+  lastSeen: 656,
+  count: 2,
+  values: [ 592, 656 ]
+}
+{
+  output: '2,1,1,0',
+  firstSeen: 593,
+  lastSeen: 663,
+  count: 4,
+  values: [ 593, 598, 657, 663 ]
+}
+{
+  output: '7,7,1,0',
+  firstSeen: 600,
+  lastSeen: 603,
+  count: 2,
+  values: [ 600, 603 ]
+}
+{
+  output: '3,7,1,0',
+  firstSeen: 601,
+  lastSeen: 601,
+  count: 1,
+  values: [ 601 ]
+}
+{
+  output: '1,7,1,0',
+  firstSeen: 602,
+  lastSeen: 602,
+  count: 1,
+  values: [ 602 ]
+}
+{
+  output: '4,7,1,0',
+  firstSeen: 604,
+  lastSeen: 607,
+  count: 2,
+  values: [ 604, 607 ]
+}
+{
+  output: '0,7,1,0',
+  firstSeen: 605,
+  lastSeen: 605,
+  count: 1,
+  values: [ 605 ]
+}
+{
+  output: '2,7,1,0',
+  firstSeen: 606,
+  lastSeen: 606,
+  count: 1,
+  values: [ 606 ]
+}
+{
+  output: '1,4,1,0',
+  firstSeen: 608,
+  lastSeen: 701,
+  count: 13,
+  values: [ 608, 610, 614, 618, 622 ]
+}
+{
+  output: '4,4,1,0',
+  firstSeen: 609,
+  lastSeen: 702,
+  count: 6,
+  values: [ 609, 612, 620, 636, 673 ]
+}
+{
+  output: '3,4,1,0',
+  firstSeen: 611,
+  lastSeen: 703,
+  count: 7,
+  values: [ 611, 616, 675, 679, 680 ]
+}
+{
+  output: '0,4,1,0',
+  firstSeen: 613,
+  lastSeen: 638,
+  count: 4,
+  values: [ 613, 621, 637, 638 ]
+}
+{
+  output: '5,4,1,0',
+  firstSeen: 615,
+  lastSeen: 686,
+  count: 7,
+  values: [ 615, 617, 623, 639, 678 ]
+}
+{
+  output: '7,4,1,0',
+  firstSeen: 619,
+  lastSeen: 700,
+  count: 11,
+  values: [ 619, 632, 633, 635, 676 ]
+}
+{
+  output: '5,3,1,0',
+  firstSeen: 624,
+  lastSeen: 631,
+  count: 2,
+  values: [ 624, 631 ]
+}
+{
+  output: '6,3,1,0',
+  firstSeen: 625,
+  lastSeen: 670,
+  count: 2,
+  values: [ 625, 670 ]
+}
+{
+  output: '1,5,1,0',
+  firstSeen: 640,
+  lastSeen: 645,
+  count: 3,
+  values: [ 640, 642, 645 ]
+}
+{
+  output: '0,5,1,0',
+  firstSeen: 641,
+  lastSeen: 641,
+  count: 1,
+  values: [ 641 ]
+}
+{
+  output: '3,5,1,0',
+  firstSeen: 643,
+  lastSeen: 643,
+  count: 1,
+  values: [ 643 ]
+}
+{
+  output: '7,5,1,0',
+  firstSeen: 644,
+  lastSeen: 646,
+  count: 2,
+  values: [ 644, 646 ]
+}
+{
+  output: '2,5,1,0',
+  firstSeen: 647,
+  lastSeen: 647,
+  count: 1,
+  values: [ 647 ]
+}
+{
+  output: '3,2,1,0',
+  firstSeen: 648,
+  lastSeen: 695,
+  count: 3,
+  values: [ 648, 691, 695 ]
+}
+{
+  output: '1,2,1,0',
+  firstSeen: 649,
+  lastSeen: 693,
+  count: 5,
+  values: [ 649, 650, 653, 690, 693 ]
+}
+{
+  output: '7,2,1,0',
+  firstSeen: 651,
+  lastSeen: 692,
+  count: 4,
+  values: [ 651, 652, 654, 692 ]
+}
+{
+  output: '2,2,1,0',
+  firstSeen: 655,
+  lastSeen: 655,
+  count: 1,
+  values: [ 655 ]
+}
+{
+  output: '6,1,1,0',
+  firstSeen: 662,
+  lastSeen: 662,
+  count: 1,
+  values: [ 662 ]
+}
+{
+  output: '7,3,1,0',
+  firstSeen: 664,
+  lastSeen: 668,
+  count: 3,
+  values: [ 664, 667, 668 ]
+}
+{
+  output: '2,3,1,0',
+  firstSeen: 671,
+  lastSeen: 671,
+  count: 1,
+  values: [ 671 ]
+}
+{
+  output: '5,2,1,0',
+  firstSeen: 688,
+  lastSeen: 688,
+  count: 1,
+  values: [ 688 ]
+}
+{
+  output: '6,2,1,0',
+  firstSeen: 689,
+  lastSeen: 689,
+  count: 1,
+  values: [ 689 ]
+}
+{
+  output: '4,2,1,0',
+  firstSeen: 694,
+  lastSeen: 694,
+  count: 1,
+  values: [ 694 ]
+}
+{
+  output: '1,7,7,0',
+  firstSeen: 704,
+  lastSeen: 733,
+  count: 5,
+  values: [ 704, 706, 709, 730, 733 ]
+}
+{
+  output: '0,7,7,0',
+  firstSeen: 705,
+  lastSeen: 735,
+  count: 3,
+  values: [ 705, 711, 735 ]
+}
+{
+  output: '3,7,7,0',
+  firstSeen: 707,
+  lastSeen: 729,
+  count: 3,
+  values: [ 707, 710, 729 ]
+}
+{
+  output: '6,7,7,0',
+  firstSeen: 708,
+  lastSeen: 732,
+  count: 2,
+  values: [ 708, 732 ]
+}
+{
+  output: '3,3,7,0',
+  firstSeen: 712,
+  lastSeen: 925,
+  count: 5,
+  values: [ 712, 718, 921, 924, 925 ]
+}
+{
+  output: '1,3,7,0',
+  firstSeen: 713,
+  lastSeen: 922,
+  count: 4,
+  values: [ 713, 714, 717, 922 ]
+}
+{
+  output: '7,3,7,0',
+  firstSeen: 715,
+  lastSeen: 923,
+  count: 3,
+  values: [ 715, 920, 923 ]
+}
+{
+  output: '6,3,7,0',
+  firstSeen: 716,
+  lastSeen: 926,
+  count: 2,
+  values: [ 716, 926 ]
+}
+{
+  output: '0,3,7,0',
+  firstSeen: 719,
+  lastSeen: 719,
+  count: 1,
+  values: [ 719 ]
+}
+{
+  output: '5,1,7,0',
+  firstSeen: 720,
+  lastSeen: 912,
+  count: 2,
+  values: [ 720, 912 ]
+}
+{
+  output: '2,1,7,0',
+  firstSeen: 721,
+  lastSeen: 919,
+  count: 4,
+  values: [ 721, 726, 913, 919 ]
+}
+{
+  output: '1,1,7,0',
+  firstSeen: 722,
+  lastSeen: 914,
+  count: 3,
+  values: [ 722, 725, 914 ]
+}
+{
+  output: '3,1,7,0',
+  firstSeen: 723,
+  lastSeen: 917,
+  count: 4,
+  values: [ 723, 915, 916, 917 ]
+}
+{
+  output: '6,1,7,0',
+  firstSeen: 724,
+  lastSeen: 918,
+  count: 2,
+  values: [ 724, 918 ]
+}
+{
+  output: '0,1,7,0',
+  firstSeen: 727,
+  lastSeen: 727,
+  count: 1,
+  values: [ 727 ]
+}
+{
+  output: '7,7,7,0',
+  firstSeen: 728,
+  lastSeen: 731,
+  count: 2,
+  values: [ 728, 731 ]
+}
+{
+  output: '2,7,7,0',
+  firstSeen: 734,
+  lastSeen: 734,
+  count: 1,
+  values: [ 734 ]
+}
+{
+  output: '1,4,7,0',
+  firstSeen: 736,
+  lastSeen: 938,
+  count: 15,
+  values: [ 736, 738, 741, 742, 743 ]
+}
+{
+  output: '4,4,7,0',
+  firstSeen: 737,
+  lastSeen: 929,
+  count: 2,
+  values: [ 737, 929 ]
+}
+{
+  output: '3,4,7,0',
+  firstSeen: 739,
+  lastSeen: 943,
+  count: 10,
+  values: [ 739, 744, 931, 932, 933 ]
+}
+{
+  output: '6,4,7,0',
+  firstSeen: 740,
+  lastSeen: 764,
+  count: 3,
+  values: [ 740, 748, 764 ]
+}
+{
+  output: '5,4,7,0',
+  firstSeen: 745,
+  lastSeen: 942,
+  count: 4,
+  values: [ 745, 934, 937, 942 ]
+}
+{
+  output: '7,4,7,0',
+  firstSeen: 747,
+  lastSeen: 939,
+  count: 5,
+  values: [ 747, 760, 761, 763, 939 ]
+}
+{
+  output: '5,2,7,0',
+  firstSeen: 752,
+  lastSeen: 752,
+  count: 1,
+  values: [ 752 ]
+}
+{
+  output: '6,2,7,0',
+  firstSeen: 753,
+  lastSeen: 756,
+  count: 2,
+  values: [ 753, 756 ]
+}
+{
+  output: '1,2,7,0',
+  firstSeen: 754,
+  lastSeen: 759,
+  count: 3,
+  values: [ 754, 757, 759 ]
+}
+{
+  output: '3,2,7,0',
+  firstSeen: 755,
+  lastSeen: 755,
+  count: 1,
+  values: [ 755 ]
+}
+{
+  output: '0,2,7,0',
+  firstSeen: 758,
+  lastSeen: 758,
+  count: 1,
+  values: [ 758 ]
+}
+{
+  output: '0,4,7,0',
+  firstSeen: 766,
+  lastSeen: 766,
+  count: 1,
+  values: [ 766 ]
+}
+{
+  output: '1,1,5,0',
+  firstSeen: 768,
+  lastSeen: 820,
+  count: 7,
+  values: [ 768, 770, 772, 786, 788 ]
+}
+{
+  output: '0,1,5,0',
+  firstSeen: 769,
+  lastSeen: 769,
+  count: 1,
+  values: [ 769 ]
+}
+{
+  output: '3,1,5,0',
+  firstSeen: 771,
+  lastSeen: 819,
+  count: 3,
+  values: [ 771, 787, 819 ]
+}
+{
+  output: '2,1,5,0',
+  firstSeen: 773,
+  lastSeen: 821,
+  count: 4,
+  values: [ 773, 785, 789, 821 ]
+}
+{
+  output: '7,1,5,0',
+  firstSeen: 774,
+  lastSeen: 823,
+  count: 2,
+  values: [ 774, 823 ]
+}
+{
+  output: '6,1,5,0',
+  firstSeen: 775,
+  lastSeen: 817,
+  count: 4,
+  values: [ 775, 790, 791, 817 ]
+}
+{
+  output: '3,4,5,0',
+  firstSeen: 776,
+  lastSeen: 808,
+  count: 3,
+  values: [ 776, 803, 808 ]
+}
+{
+  output: '1,4,5,0',
+  firstSeen: 777,
+  lastSeen: 812,
+  count: 8,
+  values: [ 777, 778, 780, 800, 802 ]
+}
+{
+  output: '7,4,5,0',
+  firstSeen: 779,
+  lastSeen: 815,
+  count: 5,
+  values: [ 779, 782, 807, 811, 815 ]
+}
+{
+  output: '2,4,5,0',
+  firstSeen: 781,
+  lastSeen: 813,
+  count: 3,
+  values: [ 781, 805, 813 ]
+}
+{
+  output: '6,4,5,0',
+  firstSeen: 783,
+  lastSeen: 783,
+  count: 1,
+  values: [ 783 ]
+}
+{
+  output: '5,1,5,0',
+  firstSeen: 784,
+  lastSeen: 816,
+  count: 2,
+  values: [ 784, 816 ]
+}
+{
+  output: '7,3,5,0',
+  firstSeen: 792,
+  lastSeen: 795,
+  count: 2,
+  values: [ 792, 795 ]
+}
+{
+  output: '3,3,5,0',
+  firstSeen: 793,
+  lastSeen: 793,
+  count: 1,
+  values: [ 793 ]
+}
+{
+  output: '1,3,5,0',
+  firstSeen: 794,
+  lastSeen: 796,
+  count: 2,
+  values: [ 794, 796 ]
+}
+{
+  output: '2,3,5,0',
+  firstSeen: 797,
+  lastSeen: 797,
+  count: 1,
+  values: [ 797 ]
+}
+{
+  output: '6,3,5,0',
+  firstSeen: 798,
+  lastSeen: 799,
+  count: 2,
+  values: [ 798, 799 ]
+}
+{
+  output: '4,4,5,0',
+  firstSeen: 801,
+  lastSeen: 801,
+  count: 1,
+  values: [ 801 ]
+}
+{
+  output: '5,4,5,0',
+  firstSeen: 806,
+  lastSeen: 814,
+  count: 3,
+  values: [ 806, 809, 814 ]
+}
+{
+  output: '4,1,5,0',
+  firstSeen: 822,
+  lastSeen: 822,
+  count: 1,
+  values: [ 822 ]
+}
+{
+  output: '7,5,5,0',
+  firstSeen: 824,
+  lastSeen: 831,
+  count: 4,
+  values: [ 824, 825, 827, 831 ]
+}
+{
+  output: '1,5,5,0',
+  firstSeen: 826,
+  lastSeen: 828,
+  count: 2,
+  values: [ 826, 828 ]
+}
+{
+  output: '2,5,5,0',
+  firstSeen: 829,
+  lastSeen: 829,
+  count: 1,
+  values: [ 829 ]
+}
+{
+  output: '4,5,5,0',
+  firstSeen: 830,
+  lastSeen: 830,
+  count: 1,
+  values: [ 830 ]
+}
+{
+  output: '1,3,4,0',
+  firstSeen: 832,
+  lastSeen: 834,
+  count: 2,
+  values: [ 832, 834 ]
+}
+{
+  output: '0,3,4,0',
+  firstSeen: 833,
+  lastSeen: 836,
+  count: 2,
+  values: [ 833, 836 ]
+}
+{
+  output: '3,3,4,0',
+  firstSeen: 835,
+  lastSeen: 838,
+  count: 2,
+  values: [ 835, 838 ]
+}
+{
+  output: '2,3,4,0',
+  firstSeen: 837,
+  lastSeen: 837,
+  count: 1,
+  values: [ 837 ]
+}
+{
+  output: '4,3,4,0',
+  firstSeen: 839,
+  lastSeen: 839,
+  count: 1,
+  values: [ 839 ]
+}
+{
+  output: '3,5,4,0',
+  firstSeen: 840,
+  lastSeen: 846,
+  count: 2,
+  values: [ 840, 846 ]
+}
+{
+  output: '1,5,4,0',
+  firstSeen: 841,
+  lastSeen: 890,
+  count: 3,
+  values: [ 841, 842, 890 ]
+}
+{
+  output: '7,5,4,0',
+  firstSeen: 843,
+  lastSeen: 891,
+  count: 4,
+  values: [ 843, 888, 889, 891 ]
+}
+{
+  output: '0,5,4,0',
+  firstSeen: 844,
+  lastSeen: 894,
+  count: 3,
+  values: [ 844, 892, 894 ]
+}
+{
+  output: '2,5,4,0',
+  firstSeen: 845,
+  lastSeen: 893,
+  count: 2,
+  values: [ 845, 893 ]
+}
+{
+  output: '4,5,4,0',
+  firstSeen: 847,
+  lastSeen: 847,
+  count: 1,
+  values: [ 847 ]
+}
+{
+  output: '5,1,4,0',
+  firstSeen: 848,
+  lastSeen: 887,
+  count: 3,
+  values: [ 848, 880, 887 ]
+}
+{
+  output: '2,1,4,0',
+  firstSeen: 849,
+  lastSeen: 885,
+  count: 4,
+  values: [ 849, 853, 854, 885 ]
+}
+{
+  output: '1,1,4,0',
+  firstSeen: 850,
+  lastSeen: 882,
+  count: 2,
+  values: [ 850, 882 ]
+}
+{
+  output: '3,1,4,0',
+  firstSeen: 851,
+  lastSeen: 883,
+  count: 2,
+  values: [ 851, 883 ]
+}
+{
+  output: '0,1,4,0',
+  firstSeen: 852,
+  lastSeen: 886,
+  count: 3,
+  values: [ 852, 884, 886 ]
+}
+{
+  output: '4,1,4,0',
+  firstSeen: 855,
+  lastSeen: 855,
+  count: 1,
+  values: [ 855 ]
+}
+{
+  output: '7,7,4,0',
+  firstSeen: 856,
+  lastSeen: 859,
+  count: 2,
+  values: [ 856, 859 ]
+}
+{
+  output: '3,7,4,0',
+  firstSeen: 857,
+  lastSeen: 857,
+  count: 1,
+  values: [ 857 ]
+}
+{
+  output: '1,7,4,0',
+  firstSeen: 858,
+  lastSeen: 858,
+  count: 1,
+  values: [ 858 ]
+}
+{
+  output: '0,7,4,0',
+  firstSeen: 860,
+  lastSeen: 860,
+  count: 1,
+  values: [ 860 ]
+}
+{
+  output: '2,7,4,0',
+  firstSeen: 861,
+  lastSeen: 862,
+  count: 2,
+  values: [ 861, 862 ]
+}
+{
+  output: '4,7,4,0',
+  firstSeen: 863,
+  lastSeen: 863,
+  count: 1,
+  values: [ 863 ]
+}
+{
+  output: '1,4,4,0',
+  firstSeen: 864,
+  lastSeen: 878,
+  count: 5,
+  values: [ 864, 866, 870, 874, 878 ]
+}
+{
+  output: '4,4,4,0',
+  firstSeen: 865,
+  lastSeen: 865,
+  count: 1,
+  values: [ 865 ]
+}
+{
+  output: '3,4,4,0',
+  firstSeen: 867,
+  lastSeen: 872,
+  count: 2,
+  values: [ 867, 872 ]
+}
+{
+  output: '0,4,4,0',
+  firstSeen: 868,
+  lastSeen: 876,
+  count: 2,
+  values: [ 868, 876 ]
+}
+{
+  output: '2,4,4,0',
+  firstSeen: 869,
+  lastSeen: 877,
+  count: 2,
+  values: [ 869, 877 ]
+}
+{
+  output: '5,4,4,0',
+  firstSeen: 871,
+  lastSeen: 879,
+  count: 3,
+  values: [ 871, 873, 879 ]
+}
+{
+  output: '7,4,4,0',
+  firstSeen: 875,
+  lastSeen: 875,
+  count: 1,
+  values: [ 875 ]
+}
+{
+  output: '6,1,4,0',
+  firstSeen: 881,
+  lastSeen: 881,
+  count: 1,
+  values: [ 881 ]
+}
+{
+  output: '5,5,4,0',
+  firstSeen: 895,
+  lastSeen: 895,
+  count: 1,
+  values: [ 895 ]
+}
+{
+  output: '1,5,7,0',
+  firstSeen: 896,
+  lastSeen: 954,
+  count: 3,
+  values: [ 896, 898, 954 ]
+}
+{
+  output: '0,5,7,0',
+  firstSeen: 897,
+  lastSeen: 897,
+  count: 1,
+  values: [ 897 ]
+}
+{
+  output: '3,5,7,0',
+  firstSeen: 899,
+  lastSeen: 959,
+  count: 6,
+  values: [ 899, 900, 901, 956, 957 ]
+}
+{
+  output: '7,5,7,0',
+  firstSeen: 902,
+  lastSeen: 955,
+  count: 4,
+  values: [ 902, 952, 953, 955 ]
+}
+{
+  output: '2,5,7,0',
+  firstSeen: 903,
+  lastSeen: 903,
+  count: 1,
+  values: [ 903 ]
+}
+{
+  output: '3,6,7,0',
+  firstSeen: 904,
+  lastSeen: 909,
+  count: 3,
+  values: [ 904, 908, 909 ]
+}
+{
+  output: '1,6,7,0',
+  firstSeen: 905,
+  lastSeen: 906,
+  count: 2,
+  values: [ 905, 906 ]
+}
+{
+  output: '7,6,7,0',
+  firstSeen: 907,
+  lastSeen: 910,
+  count: 2,
+  values: [ 907, 910 ]
+}
+{
+  output: '2,6,7,0',
+  firstSeen: 911,
+  lastSeen: 911,
+  count: 1,
+  values: [ 911 ]
+}
+{
+  output: '2,3,7,0',
+  firstSeen: 927,
+  lastSeen: 927,
+  count: 1,
+  values: [ 927 ]
+}
+{
+  output: '5,0,7,0',
+  firstSeen: 944,
+  lastSeen: 944,
+  count: 1,
+  values: [ 944 ]
+}
+{
+  output: '6,0,7,0',
+  firstSeen: 945,
+  lastSeen: 945,
+  count: 1,
+  values: [ 945 ]
+}
+{
+  output: '1,0,7,0',
+  firstSeen: 946,
+  lastSeen: 946,
+  count: 1,
+  values: [ 946 ]
+}
+{
+  output: '3,0,7,0',
+  firstSeen: 947,
+  lastSeen: 951,
+  count: 4,
+  values: [ 947, 948, 949, 951 ]
+}
+{
+  output: '4,0,7,0',
+  firstSeen: 950,
+  lastSeen: 950,
+  count: 1,
+  values: [ 950 ]
+}
+{
+  output: '4,5,7,0',
+  firstSeen: 958,
+  lastSeen: 958,
+  count: 1,
+  values: [ 958 ]
+}
+{
+  output: '1,7,6,0',
+  firstSeen: 960,
+  lastSeen: 986,
+  count: 5,
+  values: [ 960, 962, 969, 970, 986 ]
+}
+{
+  output: '0,7,6,0',
+  firstSeen: 961,
+  lastSeen: 991,
+  count: 4,
+  values: [ 961, 967, 975, 991 ]
+}
+{
+  output: '3,7,6,0',
+  firstSeen: 963,
+  lastSeen: 989,
+  count: 8,
+  values: [ 963, 965, 966, 968, 973 ]
+}
+{
+  output: '2,7,6,0',
+  firstSeen: 964,
+  lastSeen: 990,
+  count: 4,
+  values: [ 964, 972, 988, 990 ]
+}
+{
+  output: '7,7,6,0',
+  firstSeen: 971,
+  lastSeen: 987,
+  count: 3,
+  values: [ 971, 984, 987 ]
+}
+{
+  output: '5,1,6,0',
+  firstSeen: 976,
+  lastSeen: 976,
+  count: 1,
+  values: [ 976 ]
+}
+{
+  output: '2,1,6,0',
+  firstSeen: 977,
+  lastSeen: 982,
+  count: 3,
+  values: [ 977, 980, 982 ]
+}
+{
+  output: '1,1,6,0',
+  firstSeen: 978,
+  lastSeen: 978,
+  count: 1,
+  values: [ 978 ]
+}
+{
+  output: '3,1,6,0',
+  firstSeen: 979,
+  lastSeen: 981,
+  count: 2,
+  values: [ 979, 981 ]
+}
+{
+  output: '0,1,6,0',
+  firstSeen: 983,
+  lastSeen: 983,
+  count: 1,
+  values: [ 983 ]
+}
+{
+  output: '1,4,6,0',
+  firstSeen: 992,
+  lastSeen: 999,
+  count: 4,
+  values: [ 992, 994, 998, 999 ]
+}
+{
+  output: '4,4,6,0',
+  firstSeen: 993,
+  lastSeen: 993,
+  count: 1,
+  values: [ 993 ]
+}
+{
+  output: '3,4,6,0',
+  firstSeen: 995,
+  lastSeen: 1000,
+  count: 3,
+  values: [ 995, 997, 1000 ]
+}
+{
+  output: '2,4,6,0',
+  firstSeen: 996,
+  lastSeen: 996,
+  count: 1,
+  values: [ 996 ]
+}
+
+Starting optimized search...
+Checked up to 3775639000...
+Checked up to 3775640000...
